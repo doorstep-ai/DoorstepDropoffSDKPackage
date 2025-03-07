@@ -299,9 +299,9 @@ relocations:
   - { offsetInCU: 0x200, offset: 0x60362, size: 0x8, addend: 0x0, symName: '_$s18DoorstepDropoffSDK0A6AIRootV7SwiftUI4ViewAadEP14_viewListCount6inputsSiSgAD01_giJ6InputsV_tFZTW', symObjAddr: 0xE4, symBinAddr: 0x10F1C, symSize: 0x18 }
   - { offsetInCU: 0x2E5, offset: 0x60447, size: 0x8, addend: 0x0, symName: '_$s18DoorstepDropoffSDK0A6AIRootVACycfC', symObjAddr: 0x0, symBinAddr: 0x10E38, symSize: 0x50 }
   - { offsetInCU: 0x324, offset: 0x60486, size: 0x8, addend: 0x0, symName: '_$s18DoorstepDropoffSDK0A6AIRootV4bodyQrvg', symObjAddr: 0x50, symBinAddr: 0x10E88, symSize: 0x7C }
-  - { offsetInCU: 0x4F, offset: 0x6052A, size: 0x8, addend: 0x0, symName: '_$s18DoorstepDropoffSDK7NetworkC9urlString33_670B5980A032E0704D24DDDE2E513AC7LLSSvpZ', symObjAddr: 0x5528, symBinAddr: 0x257E0, symSize: 0x0 }
-  - { offsetInCU: 0x69, offset: 0x60544, size: 0x8, addend: 0x0, symName: '_$s18DoorstepDropoffSDK7NetworkC6apiKeySSvpZ', symObjAddr: 0x5538, symBinAddr: 0x257F0, symSize: 0x0 }
-  - { offsetInCU: 0x83, offset: 0x6055E, size: 0x8, addend: 0x0, symName: '_$s18DoorstepDropoffSDK7NetworkC2idSSvpZ', symObjAddr: 0x5548, symBinAddr: 0x25800, symSize: 0x0 }
+  - { offsetInCU: 0x4F, offset: 0x6052A, size: 0x8, addend: 0x0, symName: '_$s18DoorstepDropoffSDK7NetworkC9urlString33_670B5980A032E0704D24DDDE2E513AC7LLSSvpZ', symObjAddr: 0x5518, symBinAddr: 0x257E0, symSize: 0x0 }
+  - { offsetInCU: 0x69, offset: 0x60544, size: 0x8, addend: 0x0, symName: '_$s18DoorstepDropoffSDK7NetworkC6apiKeySSvpZ', symObjAddr: 0x5528, symBinAddr: 0x257F0, symSize: 0x0 }
+  - { offsetInCU: 0x83, offset: 0x6055E, size: 0x8, addend: 0x0, symName: '_$s18DoorstepDropoffSDK7NetworkC2idSSvpZ', symObjAddr: 0x5538, symBinAddr: 0x25800, symSize: 0x0 }
   - { offsetInCU: 0xEC, offset: 0x605C7, size: 0x8, addend: 0x0, symName: '_$s18DoorstepDropoffSDK19CompleteAPICallDataV10CodingKeys33_670B5980A032E0704D24DDDE2E513AC7LLOSQAASQ2eeoiySbx_xtFZTW', symObjAddr: 0x128, symBinAddr: 0x11150, symSize: 0x18 }
   - { offsetInCU: 0x16C, offset: 0x60647, size: 0x8, addend: 0x0, symName: '_$s18DoorstepDropoffSDK19CompleteAPICallDataV10CodingKeys33_670B5980A032E0704D24DDDE2E513AC7LLOSHAASH9hashValueSivgTW', symObjAddr: 0x140, symBinAddr: 0x11168, symSize: 0x44 }
   - { offsetInCU: 0x24F, offset: 0x6072A, size: 0x8, addend: 0x0, symName: '_$s18DoorstepDropoffSDK19CompleteAPICallDataV10CodingKeys33_670B5980A032E0704D24DDDE2E513AC7LLOSHAASH4hash4intoys6HasherVz_tFTW', symObjAddr: 0x184, symBinAddr: 0x111AC, symSize: 0x28 }

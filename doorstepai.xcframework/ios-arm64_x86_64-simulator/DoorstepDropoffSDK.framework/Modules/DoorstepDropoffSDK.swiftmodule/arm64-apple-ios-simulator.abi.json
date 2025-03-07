@@ -1342,21 +1342,21 @@
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/Network.swift",
       "kind": "StringLiteral",
-      "offset": 1958,
-      "length": 67,
-      "value": "\"https:\/\/collection-api-569643167514.us-central1.run.app\/v1w345345\""
+      "offset": 1856,
+      "length": 60,
+      "value": "\"https:\/\/collection-api-569643167514.us-central1.run.app\/v1\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/Network.swift",
       "kind": "StringLiteral",
-      "offset": 2074,
+      "offset": 1941,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/Network.swift",
       "kind": "StringLiteral",
-      "offset": 2105,
+      "offset": 1972,
       "length": 2,
       "value": "\"\""
     },
