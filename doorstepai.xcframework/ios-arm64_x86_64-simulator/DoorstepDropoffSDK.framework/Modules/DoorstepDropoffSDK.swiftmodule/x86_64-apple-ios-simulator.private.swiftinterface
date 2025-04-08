@@ -12,6 +12,12 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 public struct AddressType {
+  public let streetNumber: Swift.String
+  public let route: Swift.String
+  public let locality: Swift.String
+  public let administrativeAreaLevel1: Swift.String
+  public let postalCode: Swift.String
+  public init(streetNumber: Swift.String, route: Swift.String, locality: Swift.String, administrativeAreaLevel1: Swift.String, postalCode: Swift.String)
 }
 public protocol AddressDesignation {
   var addressString: Swift.String { get }

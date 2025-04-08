@@ -72,6 +72,277 @@
         "children": [
           {
             "kind": "Var",
+            "name": "streetNumber",
+            "printedName": "streetNumber",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DoorstepDropoffSDK11AddressTypeV12streetNumberSSvp",
+            "mangledName": "$s18DoorstepDropoffSDK11AddressTypeV12streetNumberSSvp",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DoorstepDropoffSDK11AddressTypeV12streetNumberSSvg",
+                "mangledName": "$s18DoorstepDropoffSDK11AddressTypeV12streetNumberSSvg",
+                "moduleName": "DoorstepDropoffSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "route",
+            "printedName": "route",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DoorstepDropoffSDK11AddressTypeV5routeSSvp",
+            "mangledName": "$s18DoorstepDropoffSDK11AddressTypeV5routeSSvp",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DoorstepDropoffSDK11AddressTypeV5routeSSvg",
+                "mangledName": "$s18DoorstepDropoffSDK11AddressTypeV5routeSSvg",
+                "moduleName": "DoorstepDropoffSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "locality",
+            "printedName": "locality",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DoorstepDropoffSDK11AddressTypeV8localitySSvp",
+            "mangledName": "$s18DoorstepDropoffSDK11AddressTypeV8localitySSvp",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DoorstepDropoffSDK11AddressTypeV8localitySSvg",
+                "mangledName": "$s18DoorstepDropoffSDK11AddressTypeV8localitySSvg",
+                "moduleName": "DoorstepDropoffSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "administrativeAreaLevel1",
+            "printedName": "administrativeAreaLevel1",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DoorstepDropoffSDK11AddressTypeV24administrativeAreaLevel1SSvp",
+            "mangledName": "$s18DoorstepDropoffSDK11AddressTypeV24administrativeAreaLevel1SSvp",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DoorstepDropoffSDK11AddressTypeV24administrativeAreaLevel1SSvg",
+                "mangledName": "$s18DoorstepDropoffSDK11AddressTypeV24administrativeAreaLevel1SSvg",
+                "moduleName": "DoorstepDropoffSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "postalCode",
+            "printedName": "postalCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DoorstepDropoffSDK11AddressTypeV10postalCodeSSvp",
+            "mangledName": "$s18DoorstepDropoffSDK11AddressTypeV10postalCodeSSvp",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DoorstepDropoffSDK11AddressTypeV10postalCodeSSvg",
+                "mangledName": "$s18DoorstepDropoffSDK11AddressTypeV10postalCodeSSvg",
+                "moduleName": "DoorstepDropoffSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(streetNumber:route:locality:administrativeAreaLevel1:postalCode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AddressType",
+                "printedName": "DoorstepDropoffSDK.AddressType",
+                "usr": "s:18DoorstepDropoffSDK11AddressTypeV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18DoorstepDropoffSDK11AddressTypeV12streetNumber5route8locality24administrativeAreaLevel110postalCodeACSS_S4Stcfc",
+            "mangledName": "$s18DoorstepDropoffSDK11AddressTypeV12streetNumber5route8locality24administrativeAreaLevel110postalCodeACSS_S4Stcfc",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
             "name": "addressString",
             "printedName": "addressString",
             "children": [
