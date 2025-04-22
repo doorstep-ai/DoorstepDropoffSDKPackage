@@ -1,0 +1,67 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios17.5 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DoorstepDropoffSDK
+import CoreLocation
+import CoreMotion
+@_exported import DoorstepDropoffSDK
+import Foundation
+import Network
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os
+public struct AddressType {
+  public let streetNumber: Swift.String
+  public let route: Swift.String
+  public let subPremise: Swift.String
+  public let locality: Swift.String
+  public let administrativeAreaLevel1: Swift.String
+  public let postalCode: Swift.String
+  public init(streetNumber: Swift.String, route: Swift.String, subPremise: Swift.String, locality: Swift.String, administrativeAreaLevel1: Swift.String, postalCode: Swift.String)
+}
+public protocol AddressDesignation {
+  var addressString: Swift.String { get }
+}
+extension Swift.String : DoorstepDropoffSDK.AddressDesignation {
+  public var addressString: Swift.String {
+    get
+  }
+}
+extension DoorstepDropoffSDK.AddressType : DoorstepDropoffSDK.AddressDesignation {
+  public var addressString: Swift.String {
+    get
+  }
+}
+public enum DoorstepAIError : Swift.Error {
+  case sessionCreationFailed(Swift.String)
+  case invalidAddress
+}
+@_hasMissingDesignatedInitializers public class DoorstepAI {
+  public static func setApiKey(key: Swift.String)
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func startDeliveryByPlaceID(placeID: Swift.String) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func startDeliveryByPlusCode(plusCode: Swift.String) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func startDeliveryByAddressType(address: DoorstepDropoffSDK.AddressType) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func newEvent(eventName: Swift.String) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func stopDelivery() async
+  #endif
+  @objc deinit
+}
+public struct DoorstepAIRoot : SwiftUI.View {
+  public init()
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s18DoorstepDropoffSDK0A6AIRootV4bodyQrvp", 0) __
+}
