@@ -4,13 +4,6 @@ The DoorstepAI Dropoff SDK enables effortless delivery tracking by combining tra
 
 ---
 
-## Key Features
-
-- **Advanced Sensor Integration:** Automatically leverages sensor-fusion along with GPS location.
-- **Easy-to-Use API:** Provides simple methods for starting and stopping delivery tracking.
-
----
-
 ## iOS Integration
 
 ### Prerequisites
@@ -23,12 +16,12 @@ The DoorstepAI Dropoff SDK enables effortless delivery tracking by combining tra
 Integrate the SDK using Swift Package Manager and import:
 
 ```swift
-import DoorstepDropoffSDk
+import DoorstepDropoffSDK
 ```
 
 ### Step 2: Configure Info.plist Permissions
 
-Update your app’s Info.plist file to include the necessary permissions:
+Update your app's Info.plist file to include the necessary permissions:
 
 ```xml
 <!-- Location Usage Descriptions -->
@@ -40,6 +33,12 @@ Update your app’s Info.plist file to include the necessary permissions:
 <!-- Optional: Motion & Sensor Data (if applicable) -->
 <key>NSMotionUsageDescription</key>
 <string>This app uses motion data to enhance delivery tracking accuracy.</string>
+
+<!-- Background Location Mode -->
+<key>UIBackgroundModes</key>
+<array>
+    <string>location</string>
+</array>
 ```
 
 ### Step 3: Initialize the SDK
@@ -80,28 +79,28 @@ Begin tracking by calling one of the provided methods:
 
 ```swift
 // Start delivery using a Google PlaceID
-DoorstepAI.startDeliveryByPlaceID(placeID: "placeID_here")
+DoorstepAI.startDeliveryByPlaceID(placeID: "placeID_here", deliveryId: "some_delivery_id")
 
 // Start delivery using a Google PlusCode
-DoorstepAI.startDeliveryByPlusCode(plusCode: "plusCode_here")
+DoorstepAI.startDeliveryByPlusCode(plusCode: "plusCode_here", deliveryId: "some_delivery_id")
 
 // Start delivery using Address Components
 let address = AddressType(
     streetNumber: "123",
     route: "Main St",
+    subPremise: "Unit A",
     locality: "City",
     administrativeAreaLevel1: "State",
     postalCode: "12345"
 )
-DoorstepAI.startDeliveryByAddressType(address: address)
+DoorstepAI.startDeliveryByAddressType(address: address, deliveryId: "some_delivery_id")
 ```
 
 When the delivery is complete, stop tracking by calling:
 
 ```swift
-DoorstepAI.stopDelivery()
+DoorstepAI.stopDelivery(deliveryId: "some_delivery_id")
 ```
-
 ### Step 5: Error Handling and Troubleshooting
 
 - **Initialization Errors:** Check the Xcode console for any error messages during SDK setup.
@@ -109,8 +108,4 @@ DoorstepAI.stopDelivery()
 
 ---
 
-## Final Notes
 
-The DoorstepAI SDK offers a comprehensive solution for delivery tracking by unifying traditional location services with sensor fusion. By following these integration steps, you can ensure that your application is fully equipped to handle real-time tracking with high accuracy and reliability.
-
-For further assistance or more detailed configuration options, please contact DoorstepAI Support.
