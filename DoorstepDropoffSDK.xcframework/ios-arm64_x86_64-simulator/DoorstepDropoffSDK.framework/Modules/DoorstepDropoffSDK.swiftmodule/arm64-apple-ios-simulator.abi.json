@@ -957,6 +957,75 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "DoorstepDropoffSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SDKVersion",
+        "printedName": "SDKVersion",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "version",
+            "printedName": "version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DoorstepDropoffSDK10SDKVersionO7versionSSvpZ",
+            "mangledName": "$s18DoorstepDropoffSDK10SDKVersionO7versionSSvpZ",
+            "moduleName": "DoorstepDropoffSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DoorstepDropoffSDK10SDKVersionO7versionSSvgZ",
+                "mangledName": "$s18DoorstepDropoffSDK10SDKVersionO7versionSSvgZ",
+                "moduleName": "DoorstepDropoffSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:18DoorstepDropoffSDK10SDKVersionO",
+        "mangledName": "$s18DoorstepDropoffSDK10SDKVersionO",
+        "moduleName": "DoorstepDropoffSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "DoorstepDropoffSDK",
         "declAttributes": [
           "RawDocComment"
@@ -1879,6 +1948,20 @@
       "value": "\"DoorstepDropoffSDK.LocationManager\""
     },
     {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/Version.swift",
+      "kind": "StringLiteral",
+      "offset": 181,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/Version.swift",
+      "kind": "StringLiteral",
+      "offset": 225,
+      "length": 7,
+      "value": "\"1.4.1\""
+    },
+    {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/Network.swift",
       "kind": "StringLiteral",
       "offset": 2175,
@@ -1965,14 +2048,14 @@
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/Network.swift",
       "kind": "IntegerLiteral",
-      "offset": 22877,
+      "offset": 22816,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/Network.swift",
       "kind": "IntegerLiteral",
-      "offset": 25323,
+      "offset": 25262,
       "length": 1,
       "value": "0"
     },

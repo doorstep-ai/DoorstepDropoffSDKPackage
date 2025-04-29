@@ -59,6 +59,9 @@ public enum DoorstepAIError : Swift.Error {
   #endif
   @objc deinit
 }
+public enum SDKVersion {
+  public static let version: Swift.String
+}
 public struct DoorstepAIRoot : SwiftUI.View {
   public init()
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
