@@ -1,6 +1,8 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target x86_64-apple-ios17.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DoorstepDropoffSDK
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target x86_64-apple-ios17.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DoorstepDropoffSDK
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1
+import Compression
 import CoreLocation
 import CoreMotion
 @_exported import DoorstepDropoffSDK
@@ -42,30 +44,18 @@ public enum DoorstepAIError : Swift.Error {
 @_hasMissingDesignatedInitializers public class DoorstepAI {
   public static var devMode: Swift.Bool
   public static func setApiKey(key: Swift.String)
-  #if compiler(>=5.3) && $AsyncAwait
   public static func startDeliveryByPlaceID(placeID: Swift.String, deliveryId: Swift.String) async throws
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public static func startDeliveryByPlusCode(plusCode: Swift.String, deliveryId: Swift.String) async throws
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public static func startDeliveryByAddressType(address: DoorstepDropoffSDK.AddressType, deliveryId: Swift.String) async throws
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public static func newEvent(eventName: Swift.String, deliveryId: Swift.String) async throws
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public static func stopDelivery(deliveryId: Swift.String) async
-  #endif
   @objc deinit
 }
-public enum SDKVersion {
-  public static let version: Swift.String
-}
-public struct DoorstepAIRoot : SwiftUI.View {
-  public init()
-  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+@_Concurrency.MainActor @preconcurrency public struct DoorstepAIRoot : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init()
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s18DoorstepDropoffSDK0A6AIRootV4bodyQrvp", 0) __
 }
+extension DoorstepDropoffSDK.DoorstepAIRoot : Swift.Sendable {}
