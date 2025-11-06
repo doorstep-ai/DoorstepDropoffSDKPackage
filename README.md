@@ -1,7 +1,5 @@
 # DoorstepDropoffSDK Documentation
 
-The DoorstepAI Dropoff SDK enables effortless delivery tracking by combining traditional location services with advanced sensor fusion.
-
 ---
 
 ## iOS Integration
@@ -13,7 +11,7 @@ The DoorstepAI Dropoff SDK enables effortless delivery tracking by combining tra
 
 ### Step 1: Add the SDK Dependency
 
-Integrate the SDK using Swift Package Manager and import:
+Integrate the SDK using Swift Package Manager and import (check example application for package source):
 
 ```swift
 import DoorstepDropoffSDK
@@ -26,13 +24,13 @@ Update your app's Info.plist file to include the necessary permissions:
 ```xml
 <!-- Location Usage Descriptions -->
 <key>NSLocationWhenInUseUsageDescription</key>
-<string>This app requires access to your location for delivery tracking.</string>
+<string>This app requires access to your location for enhanced delivery inteligence</string>
 <key>NSLocationAlwaysAndWhenInUseUsage</key>
-<string>This app requires access to your location to provide continuous tracking even in the background.</string>
+<string>This app requires access to your location for enhanced delivery inteligence</string>
 
 <!-- Optional: Motion & Sensor Data (if applicable) -->
 <key>NSMotionUsageDescription</key>
-<string>This app uses motion data to enhance delivery tracking accuracy.</string>
+<string>This app requires access to motion for enhanced delivery inteligence</string>
 
 <!-- Background Location Mode -->
 <key>UIBackgroundModes</key>
@@ -94,6 +92,20 @@ let address = AddressType(
     postalCode: "12345"
 )
 DoorstepAI.startDeliveryByAddressType(address: address, deliveryId: "some_delivery_id")
+```
+
+Record a dropoff with the following event recording methods:
+
+```swift
+// use this event trigger when activating a POD capture
+DoorstepAI.newEvent("taking_pod", "some_delivey_id")
+
+// use this event trigger when POD capture is complete
+DoorstepAI.newEvent("taking_pod", "pod_captured")
+
+// use this event trigger there is no POD, only a dropoff
+DoorstepAI.newEvent("taking_pod", "dropoff")
+
 ```
 
 When the delivery is complete, stop tracking by calling:

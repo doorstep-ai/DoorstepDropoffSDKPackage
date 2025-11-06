@@ -10,47 +10,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EYjBMRaPOiaHlSXkwBC+Wgdu3h8=
+		QBAYVMCxB9yhlBcerpYZ6JjbhH0=
 		</data>
 		<key>Modules/DoorstepDropoffSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		J+fxj6kt7m93fMti9Uxn2iBAdYk=
+		lk4EZ8C2WB2TWCx+ocZTKSyTdkI=
 		</data>
 		<key>Modules/DoorstepDropoffSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		EiXaDG4CMI9GUHaNkeVXuzSsNwc=
+		nzhxYOTa5lKzIeuyQnSRS8503VY=
 		</data>
 		<key>Modules/DoorstepDropoffSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		q1LdXvdlTB+/mwVutiM7vNbUyrc=
+		bejdSfngXNrJIu/y5Vv5Zbny+Jc=
 		</data>
 		<key>Modules/DoorstepDropoffSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		EiXaDG4CMI9GUHaNkeVXuzSsNwc=
+		nzhxYOTa5lKzIeuyQnSRS8503VY=
 		</data>
 		<key>Modules/DoorstepDropoffSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IuJKNgj9TtQ+1G813VzIUie5p+o=
+		fxw3Slg+Z7m90HZ9gcBwBTppHrE=
 		</data>
 		<key>Modules/DoorstepDropoffSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		J+fxj6kt7m93fMti9Uxn2iBAdYk=
+		lk4EZ8C2WB2TWCx+ocZTKSyTdkI=
 		</data>
 		<key>Modules/DoorstepDropoffSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		qjuGCU/bvRHQK55HSCMKnRIR4rg=
+		5Ryb2NEkpgS5qGsZ3iiyGiT9nCQ=
 		</data>
 		<key>Modules/DoorstepDropoffSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		2VCNa5dUl2pHiyHJM3FCItg1NBc=
+		hOL9roMiOSXLg+fM5b8PrIzOrQo=
 		</data>
 		<key>Modules/DoorstepDropoffSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		qjuGCU/bvRHQK55HSCMKnRIR4rg=
+		5Ryb2NEkpgS5qGsZ3iiyGiT9nCQ=
 		</data>
 		<key>Modules/DoorstepDropoffSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dBAFsoenHR3wDNVNGWU8wmo8in8=
+		T+3/4439EwvjatOw2GgKAEOibRI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,70 +70,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yjXu4O93+4we6XGcEsYqZ6iydnus5U8G0aFFkk2edDs=
+			sbgjv4doVjaBvmBS3W/frn4bmSb0HfnIVGJ2HpFtr18=
 			</data>
 		</dict>
 		<key>Modules/DoorstepDropoffSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DlLpLdW2GKkJR1xuwSFhAZpey8cLtFxUSlV0UmFyD7Q=
+			zPiU6z3+4M02Dypsjc4vf8mJSjrDZzHIpEutU2gi9I8=
 			</data>
 		</dict>
 		<key>Modules/DoorstepDropoffSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zpYH/3fPUxSnoiF+ahsinkGHe5UDN4V9L82/Uc6JchM=
+			d4VO2jSc1ieZ1qmIxFs2m8vsXfJ/8rpKPQaGlOrR5is=
 			</data>
 		</dict>
 		<key>Modules/DoorstepDropoffSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DlLpLdW2GKkJR1xuwSFhAZpey8cLtFxUSlV0UmFyD7Q=
+			zPiU6z3+4M02Dypsjc4vf8mJSjrDZzHIpEutU2gi9I8=
 			</data>
 		</dict>
 		<key>Modules/DoorstepDropoffSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q/dwGgGqAxbVcq9evVw7lkOiq2igRaiZPb9GV8IuUWw=
+			fROW1stHClHvbhCUGX1DU8mlSR3zFrB7d26FU7AJ+nc=
 			</data>
 		</dict>
 		<key>Modules/DoorstepDropoffSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yjXu4O93+4we6XGcEsYqZ6iydnus5U8G0aFFkk2edDs=
+			sbgjv4doVjaBvmBS3W/frn4bmSb0HfnIVGJ2HpFtr18=
 			</data>
 		</dict>
 		<key>Modules/DoorstepDropoffSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E2H1xU/kWvaBcMMXH5WwXrcp4JcvP/rp9W2sXhDGqMA=
+			98QhLgIAraeuSs0hn/YIzNfm/e7UfxLvgMygV/9Tp84=
 			</data>
 		</dict>
 		<key>Modules/DoorstepDropoffSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hmQHP6ajhNaW6BCXeQWy/ONTWfYDYcmoMKkIPy4/0Ew=
+			+9D/rULVbhfAPYCBlds1sCFXp2ZdnpeUiIqi11opK2Q=
 			</data>
 		</dict>
 		<key>Modules/DoorstepDropoffSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E2H1xU/kWvaBcMMXH5WwXrcp4JcvP/rp9W2sXhDGqMA=
+			98QhLgIAraeuSs0hn/YIzNfm/e7UfxLvgMygV/9Tp84=
 			</data>
 		</dict>
 		<key>Modules/DoorstepDropoffSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZkJEDjawQNdOFz4ce2Q0q432P9ExgeS9xAFVXBWt9Lk=
+			qFfSWGIAtOwuOgVKE5hAreSfEha2COkgDoVgexnguew=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
