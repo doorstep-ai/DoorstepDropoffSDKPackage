@@ -756,17 +756,23 @@
           {
             "kind": "Function",
             "name": "enableDevMode",
-            "printedName": "enableDevMode()",
+            "printedName": "enableDevMode(apiKey:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:18DoorstepDropoffSDK0A2AIC13enableDevModeyyFZ",
-            "mangledName": "$s18DoorstepDropoffSDK0A2AIC13enableDevModeyyFZ",
+            "usr": "s:18DoorstepDropoffSDK0A2AIC13enableDevMode6apiKeyySS_tYaFZ",
+            "mangledName": "$s18DoorstepDropoffSDK0A2AIC13enableDevMode6apiKeyySS_tYaFZ",
             "moduleName": "DoorstepDropoffSDK",
             "static": true,
             "declAttributes": [
@@ -2037,21 +2043,21 @@
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DataHolder.swift",
       "kind": "BooleanLiteral",
-      "offset": 397,
+      "offset": 398,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DataHolder.swift",
       "kind": "StringLiteral",
-      "offset": 443,
+      "offset": 444,
       "length": 13,
       "value": "\"dataCollect\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/LocationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 920,
+      "offset": 931,
       "length": 5,
       "value": "false"
     },
@@ -2065,7 +2071,7 @@
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/Environment.swift",
       "kind": "StringLiteral",
-      "offset": 159,
+      "offset": 163,
       "length": 42,
       "value": "\"https:\/\/collection.api.track.doorstep.ai\""
     },
