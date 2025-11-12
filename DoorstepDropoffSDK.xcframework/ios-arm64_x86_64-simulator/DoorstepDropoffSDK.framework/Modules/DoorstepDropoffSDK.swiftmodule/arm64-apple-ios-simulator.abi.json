@@ -728,7 +728,7 @@
           {
             "kind": "Function",
             "name": "setApiKey",
-            "printedName": "setApiKey(key:)",
+            "printedName": "setApiKey(key:initCollectors:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -740,11 +740,18 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:18DoorstepDropoffSDK0A2AIC9setApiKey3keyySS_tFZ",
-            "mangledName": "$s18DoorstepDropoffSDK0A2AIC9setApiKey3keyySS_tFZ",
+            "usr": "s:18DoorstepDropoffSDK0A2AIC9setApiKey3key14initCollectorsySS_SbtFZ",
+            "mangledName": "$s18DoorstepDropoffSDK0A2AIC9setApiKey3key14initCollectorsySS_SbtFZ",
             "moduleName": "DoorstepDropoffSDK",
             "static": true,
             "declAttributes": [
@@ -2037,6 +2044,13 @@
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/DoorstepAI.swift",
       "kind": "BooleanLiteral",
       "offset": 1395,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/DoorstepAI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1475,
       "length": 5,
       "value": "false"
     },
