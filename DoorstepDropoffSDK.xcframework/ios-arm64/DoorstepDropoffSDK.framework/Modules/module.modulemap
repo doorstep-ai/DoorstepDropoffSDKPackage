@@ -1,6 +1,0 @@
-framework module DoorstepDropoffSDK {
-  umbrella header "DoorstepDropoffSDK.h"
-  export *
-
-  module * { export * }
-}
