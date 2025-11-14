@@ -92,6 +92,10 @@ let address = AddressType(
     postalCode: "12345"
 )
 DoorstepAI.startDeliveryByAddressType(address: address, deliveryId: "some_delivery_id")
+
+// start delivery using a single address string
+let address = "123 Main St, Unit A, City, State, 12345"
+DoorstepAI.startDeliveryByAddressString(address: address, deliveryId: "some_delivery_id")
 ```
 
 Record a dropoff with the following event recording methods:
