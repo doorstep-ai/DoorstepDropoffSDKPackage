@@ -2359,7 +2359,7 @@
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/Environment.swift",
       "kind": "StringLiteral",
-      "offset": 163,
+      "offset": 159,
       "length": 42,
       "value": "\"https:\/\/collection.api.track.doorstep.ai\""
     },
