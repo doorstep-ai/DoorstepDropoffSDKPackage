@@ -6,7 +6,7 @@
 
 ### Prerequisites
 
-- **Development Environment:** Xcode (version 12 or later is recommended) with a target of iOS 14 or higher.
+- **Development Environment:** Xcode (version 12 or later is recommended) with a target of iOS 15 or higher.
 - **API Key:** A valid API key provided by DoorstepAI.
 
 ### Step 1: Add the SDK Dependency
@@ -41,14 +41,15 @@ Update your app's Info.plist file to include the necessary permissions:
 
 ### Step 3: Initialize the SDK
 
-Set the API Key in your main view controller or app delegate
+Set the API Key in your app entry point (e.g., `App` initializer or `AppDelegate`). `initCollectors` and `shouldGetConfig` default to `true`; override only if you need to defer initialization.
 
 ```swift
 import DoorstepDropoffSDK
 
 struct MyApp: App {
     init() {
-        DooorstepAI.setApiKey("YOUR_API_KEY")
+        DoorstepAI.setApiKey(key: "YOUR_API_KEY")
+
     }
     
     var body: some Scene {
@@ -59,7 +60,9 @@ struct MyApp: App {
 }
 ```
 
-Initialize the Root Component within the ContentView
+Root Component (optional, legacy support)
+
+> Earlier versions required mounting `DoorstepAIRoot`. In the latest SDK this is no longer required; data collection starts with `startDelivery*`. `DoorstepAIRoot` remains supported for backwards compatibility and will continue to work for the foreseeable future.
 
 ```swift
 
@@ -73,55 +76,96 @@ struct ContentView: View {
 
 ### Step 4: Starting and Stopping Delivery Tracking
 
-Begin tracking by calling one of the provided methods:
+Begin tracking with the async entrypoints. Each start method accepts an optional `timeoutSeconds` to automatically stop tracking after the provided duration. This serves as a backstop to account for any edge cases affecting the exit-geofence. Use this feature carefully, as an unoptimized configuration may affect the tracking output.
 
 ```swift
-// Start delivery using a Google PlaceID
-DoorstepAI.startDeliveryByPlaceID(placeID: "placeID_here", deliveryId: "some_delivery_id")
-
-// Start delivery using a Google PlusCode
-DoorstepAI.startDeliveryByPlusCode(plusCode: "plusCode_here", deliveryId: "some_delivery_id")
-
-// Start delivery using Address Components
-let address = AddressType(
-    streetNumber: "123",
-    route: "Main St",
-    subPremise: "Unit A",
-    locality: "City",
-    administrativeAreaLevel1: "State",
-    postalCode: "12345"
-)
-DoorstepAI.startDeliveryByAddressType(address: address, deliveryId: "some_delivery_id")
-
-// start delivery using a single address string
-let address = "123 Main St, Unit A, City, State, 12345"
-DoorstepAI.startDeliveryByAddressString(address: address, deliveryId: "some_delivery_id")
+Task {
+    // Start delivery using a Google PlaceID
+    try await DoorstepAI.startDeliveryByPlaceID(
+        placeID: "placeID_here",
+        deliveryId: "some_delivery_id",
+        timeoutSeconds: 1200 // optional
+    )
+    
+    // Start delivery using a Google PlusCode
+    try await DoorstepAI.startDeliveryByPlusCode(
+        plusCode: "plusCode_here",
+        deliveryId: "some_delivery_id"
+    )
+    
+    // Start delivery using Address components
+    let address = AddressType(
+        streetNumber: "123",
+        route: "Main St",
+        subPremise: "Unit A",
+        locality: "City",
+        administrativeAreaLevel1: "State",
+        postalCode: "12345"
+    )
+    try await DoorstepAI.startDeliveryByAddressType(
+        address: address,
+        deliveryId: "some_delivery_id"
+    )
+    
+    // Start delivery using a single address string
+    let addressString = "123 Main St, Unit A, City, State, 12345"
+    try await DoorstepAI.startDeliveryByAddressString(
+        address: addressString,
+        deliveryId: "some_delivery_id"
+    )
+    
+    // Start delivery using latitude/longitude and sub-unit
+    try await DoorstepAI.startDeliveryByLatLng(
+        latitude: 37.776,
+        longitude: -122.417,
+        subUnit: "Unit A",
+        deliveryId: "some_delivery_id"
+    )
+}
 ```
 
 Record a dropoff with the following event recording methods:
 
 ```swift
-// use this event trigger when activating a POD capture
-DoorstepAI.newEvent("taking_pod", "some_delivey_id")
+Task {
+    // For a POD dropoff
+    try await DoorstepAI.markDropoff(
+        deliveryId: "some_delivery_id",
+        dropoffType: .pod // or .non_pod
+    )
 
-// use this event trigger when POD capture is complete
-DoorstepAI.newEvent("taking_pod", "pod_captured")
-
-// use this event trigger there is no POD, only a dropoff
-DoorstepAI.newEvent("taking_pod", "dropoff")
-
+    // For a non-pod dropoff
+    try await DoorstepAI.markDropoff(
+        deliveryId: "some_delivery_id",
+        dropoffType: .non_pod
+    )
+    
+    // NOTE: The previous methods of marking a dropoff still work as expected.
+    try await DoorstepAI.newEvent(
+        eventName: "taking_pod",
+        deliveryId: "some_delivery_id"
+    )
+}
 ```
 
-When the delivery is complete, stop tracking by calling:
+When the delivery is complete + driver has exited the geofence, stop tracking by calling:
 
 ```swift
-DoorstepAI.stopDelivery(deliveryId: "some_delivery_id")
+Task {
+    await DoorstepAI.stopDelivery(deliveryId: "some_delivery_id")
+}
 ```
+
+#### Recommended Geofence Settings
+
+- Use both an enter and exit geofence to bound the delivery session.
+- A radius of 250m or larger typically yields the best results; 
+
 ### Step 5: Error Handling and Troubleshooting
 
 - **Initialization Errors:** Check the Xcode console for any error messages during SDK setup.
 - **Permission Denials:** Monitor the authorization status of location and motion services. Prompt the user for permission if needed.
-
+- **Session Creation:** `startDelivery*` are `async throws`; handle failures (e.g., invalid API key) with `do/try/catch`.
 ---
 
 
