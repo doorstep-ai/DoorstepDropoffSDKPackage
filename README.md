@@ -11,7 +11,7 @@
 
 ### Step 1: Add the SDK Dependency
 
-Integrate the SDK using Swift Package Manager and import (check example application for package source):
+Integrate the SDK using Swift Package Manager and import:
 
 ```swift
 import DoorstepDropoffSDK
@@ -131,7 +131,7 @@ Task {
     // For a POD dropoff
     try await DoorstepAI.markDropoff(
         deliveryId: "some_delivery_id",
-        dropoffType: .pod // or .non_pod
+        dropoffType: .pod
     )
 
     // For a non-pod dropoff
