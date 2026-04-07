@@ -1,13 +1,14 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DoorstepDropoffSDK
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-compiler-version: Apple Swift version 6.3 effective-5.10 (swiftlang-6.3.0.123.5 clang-2100.0.123.102)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DoorstepDropoffSDK
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3
 import Compression
 import CoreLocation
 import CoreMotion
 @_exported import DoorstepDropoffSDK
 import Foundation
 import Network
+import SQLite3
 import Swift
 import SwiftUI
 import UIKit
@@ -22,9 +23,7 @@ public enum SDKLogLevel : Swift.Int, Swift.Codable, Swift.Comparable {
   case error
   case critical
   public static func < (lhs: DoorstepDropoffSDK.SDKLogLevel, rhs: DoorstepDropoffSDK.SDKLogLevel) -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -68,9 +67,7 @@ public enum DoorstepAIError : Swift.Error {
 public enum DropoffType : Swift.String, Swift.Codable {
   case pod
   case non_pod
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -78,23 +75,15 @@ public enum DropoffType : Swift.String, Swift.Codable {
 }
 @_hasMissingDesignatedInitializers public class DoorstepAI {
   public static func setApiKey(key: Swift.String, initCollectors: Swift.Bool = true, shouldGetConfig: Swift.Bool = true)
+  public static func setBackgroundSessionCompletionHandler(_ handler: @escaping () -> Swift.Void)
   public static func configureRemoteLogging(enabled: Swift.Bool, minLevel: DoorstepDropoffSDK.SDKLogLevel = .warning, flushInterval: Foundation.TimeInterval = 30, batchSize: Swift.Int = 50, maxQueueSize: Swift.Int = 1000)
   public static func enableDevMode(apiKey: Swift.String) async
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func startDeliveryByPlaceID(placeID: Swift.String, deliveryId: Swift.String, timeoutSeconds: Foundation.TimeInterval? = nil) async throws
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Use startDeliveryByAddressString(address:deliveryId:timeoutSeconds:) instead.")
   public static func startDeliveryByPlusCode(plusCode: Swift.String, deliveryId: Swift.String, timeoutSeconds: Foundation.TimeInterval? = nil) async throws
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func startDeliveryByAddressType(address: DoorstepDropoffSDK.AddressType, deliveryId: Swift.String, timeoutSeconds: Foundation.TimeInterval? = nil) async throws
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func startDeliveryByAddressString(address: Swift.String, deliveryId: Swift.String, timeoutSeconds: Foundation.TimeInterval? = nil) async throws
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func startDeliveryByLatLng(latitude: Swift.Double, longitude: Swift.Double, subUnit: Swift.String, deliveryId: Swift.String, timeoutSeconds: Foundation.TimeInterval? = nil) async throws
-  #endif
   public static func markDropoff(deliveryId: Swift.String, dropoffType: DoorstepDropoffSDK.DropoffType) async throws
   public static func newEvent(eventName: Swift.String, deliveryId: Swift.String) async throws
   public static func stopDelivery(deliveryId: Swift.String) async
