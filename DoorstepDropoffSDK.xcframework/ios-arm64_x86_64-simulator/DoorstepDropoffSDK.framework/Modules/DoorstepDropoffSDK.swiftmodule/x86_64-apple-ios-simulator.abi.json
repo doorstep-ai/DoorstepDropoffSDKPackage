@@ -3854,9 +3854,9 @@
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/Environment.swift",
       "kind": "StringLiteral",
-      "offset": 227,
-      "length": 26,
-      "value": "\"http:\/\/192.168.4.37:8080\""
+      "offset": 157,
+      "length": 42,
+      "value": "\"https:\/\/collection.api.track.doorstep.ai\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DataManager.swift",
