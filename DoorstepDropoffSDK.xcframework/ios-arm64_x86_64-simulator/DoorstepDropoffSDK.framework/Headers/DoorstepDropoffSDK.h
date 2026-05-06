@@ -14,5 +14,6 @@ FOUNDATION_EXPORT double DoorstepDropoffSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char DoorstepDropoffSDKVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <DoorstepDropoffSDK/PublicHeader.h>
+#import <DoorstepDropoffSDK/RateReducer.h>
 
 
