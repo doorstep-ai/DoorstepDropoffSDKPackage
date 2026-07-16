@@ -1,8 +1,9 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
 // swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DoorstepDropoffSDK
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import Compression
+import CoreBluetooth
 import CoreLocation
 import CoreMotion
 @_exported import DoorstepDropoffSDK
@@ -28,6 +29,46 @@ public enum SDKLogLevel : Swift.Int, Swift.Codable, Swift.Comparable {
   public var rawValue: Swift.Int {
     get
   }
+}
+public struct LiveStreamSnapshot {
+  public let stream: Swift.String
+  public let count: Swift.Int64
+  public let rateHz: Swift.Double
+  public let lastAgeMs: Swift.Int64
+  public let latest: Swift.Double?
+  public let recent: [Swift.Float]
+}
+public struct LiveAxisSnapshot {
+  public let x: [Swift.Float]
+  public let y: [Swift.Float]
+  public let z: [Swift.Float]
+  public let latestX: Swift.Double?
+  public let latestY: Swift.Double?
+  public let latestZ: Swift.Double?
+}
+public struct LiveDeviceEntry {
+  public let id: Swift.String
+  public let label: Swift.String?
+  public let rssi: Swift.Int
+  public let ageMs: Swift.Int64
+  public let extra: [Swift.String : Swift.String]
+}
+public struct LiveLatLng {
+  public let lat: Swift.Double
+  public let lon: Swift.Double
+  public let tsMs: Swift.Int64
+}
+@_hasMissingDesignatedInitializers final public class LiveMonitor {
+  public static let shared: DoorstepDropoffSDK.LiveMonitor
+  final public var enabled: Swift.Bool {
+    get
+  }
+  final public func setEnabled(_ on: Swift.Bool)
+  final public func snapshot(_ stream: Swift.String, _ nowMs: Swift.Int64) -> DoorstepDropoffSDK.LiveStreamSnapshot
+  final public func axisSnapshot(_ stream: Swift.String) -> DoorstepDropoffSDK.LiveAxisSnapshot?
+  final public func deviceList(_ stream: Swift.String, _ nowMs: Swift.Int64) -> [DoorstepDropoffSDK.LiveDeviceEntry]
+  final public func locationTrack() -> [DoorstepDropoffSDK.LiveLatLng]
+  @objc deinit
 }
 public struct AddressType {
   public let streetNumber: Swift.String
@@ -83,22 +124,53 @@ public enum DropoffType : Swift.String, Swift.Codable {
 @_hasMissingDesignatedInitializers public class DoorstepAI {
   public static let configDidLoadNotification: Foundation.Notification.Name
   public static let configDidFailToLoadNotification: Foundation.Notification.Name
+  public static let geofenceSessionStartedNotification: Foundation.Notification.Name
+  public static let geofenceSessionStoppedNotification: Foundation.Notification.Name
   public static func setApiKey(key: Swift.String, initCollectors: Swift.Bool = true, shouldGetConfig: Swift.Bool = true)
   public static func setBackgroundSessionCompletionHandler(_ handler: @escaping () -> Swift.Void)
-  public static func requestAllPermissions(requestAlwaysLocation: Swift.Bool = true)
+  public static func requestAllPermissions(requestAlwaysLocation: Swift.Bool = true, requestBluetooth: Swift.Bool = false)
   public static func configureRemoteLogging(enabled: Swift.Bool, minLevel: DoorstepDropoffSDK.SDKLogLevel = .warning, flushInterval: Foundation.TimeInterval = 30, batchSize: Swift.Int = 50, maxQueueSize: Swift.Int = 1000)
   public static func enableDevMode(apiKey: Swift.String) async
-  public static func startDeliveryByPlaceID(placeID: Swift.String, deliveryId: Swift.String, timeoutSeconds: Foundation.TimeInterval? = nil, autoStopAfterDropoffSeconds: Foundation.TimeInterval? = nil) async throws
+  public static func startDeliveryByPlaceID(placeID: Swift.String, deliveryId: Swift.String, customerId: Swift.String? = nil, driverId: Swift.String? = nil, timeoutSeconds: Foundation.TimeInterval? = nil, autoStopAfterDropoffSeconds: Foundation.TimeInterval? = nil) async throws
   @available(*, deprecated, message: "Use startDeliveryByAddressType(address:deliveryId:coordinates:timeoutSeconds:autoStopAfterDropoffSeconds:) or startDeliveryByAddressString(address:deliveryId:coordinates:timeoutSeconds:autoStopAfterDropoffSeconds:) instead.")
-  public static func startDeliveryByPlusCode(plusCode: Swift.String, deliveryId: Swift.String, timeoutSeconds: Foundation.TimeInterval? = nil, autoStopAfterDropoffSeconds: Foundation.TimeInterval? = nil) async throws
-  public static func startDeliveryByAddressType(address: DoorstepDropoffSDK.AddressType, deliveryId: Swift.String, coordinates: DoorstepDropoffSDK.LatLngObject? = nil, timeoutSeconds: Foundation.TimeInterval? = nil, autoStopAfterDropoffSeconds: Foundation.TimeInterval? = nil) async throws
-  public static func startDeliveryByAddressString(address: Swift.String, deliveryId: Swift.String, coordinates: DoorstepDropoffSDK.LatLngObject? = nil, timeoutSeconds: Foundation.TimeInterval? = nil, autoStopAfterDropoffSeconds: Foundation.TimeInterval? = nil) async throws
+  public static func startDeliveryByPlusCode(plusCode: Swift.String, deliveryId: Swift.String, customerId: Swift.String? = nil, driverId: Swift.String? = nil, timeoutSeconds: Foundation.TimeInterval? = nil, autoStopAfterDropoffSeconds: Foundation.TimeInterval? = nil) async throws
+  public static func startDeliveryByAddressType(address: DoorstepDropoffSDK.AddressType, deliveryId: Swift.String, customerId: Swift.String? = nil, driverId: Swift.String? = nil, coordinates: DoorstepDropoffSDK.LatLngObject? = nil, timeoutSeconds: Foundation.TimeInterval? = nil, autoStopAfterDropoffSeconds: Foundation.TimeInterval? = nil) async throws
+  public static func startDeliveryByAddressString(address: Swift.String, deliveryId: Swift.String, customerId: Swift.String? = nil, driverId: Swift.String? = nil, coordinates: DoorstepDropoffSDK.LatLngObject? = nil, timeoutSeconds: Foundation.TimeInterval? = nil, autoStopAfterDropoffSeconds: Foundation.TimeInterval? = nil) async throws
   @available(*, deprecated, message: "Use startDeliveryByAddressType(address:deliveryId:coordinates:timeoutSeconds:autoStopAfterDropoffSeconds:) or startDeliveryByAddressString(address:deliveryId:coordinates:timeoutSeconds:autoStopAfterDropoffSeconds:) instead.")
-  public static func startDeliveryByLatLng(latitude: Swift.Double, longitude: Swift.Double, subUnit: Swift.String, deliveryId: Swift.String, timeoutSeconds: Foundation.TimeInterval? = nil, autoStopAfterDropoffSeconds: Foundation.TimeInterval? = nil) async throws
+  public static func startDeliveryByLatLng(latitude: Swift.Double, longitude: Swift.Double, subUnit: Swift.String, deliveryId: Swift.String, customerId: Swift.String? = nil, driverId: Swift.String? = nil, timeoutSeconds: Foundation.TimeInterval? = nil, autoStopAfterDropoffSeconds: Foundation.TimeInterval? = nil) async throws
   public static func markDropoff(deliveryId: Swift.String, dropoffType: DoorstepDropoffSDK.DropoffType) async throws
-  public static func newEvent(eventName: Swift.String, deliveryId: Swift.String) async throws
+  public static func newEvent(eventName: Swift.String, deliveryId: Swift.String, timestamp: Swift.Double? = nil) async throws
   public static func stopDelivery(deliveryId: Swift.String) async
+  public static func startRouteGeofencing(stops: [DoorstepDropoffSDK.DeliveryStop], options: DoorstepDropoffSDK.RouteGeofenceOptions = RouteGeofenceOptions())
+  public static func updateRouteStops(_ stops: [DoorstepDropoffSDK.DeliveryStop])
+  public static func stopRouteGeofencing()
+  public static func resumeRouteGeofencingIfNeeded()
+  public static var monitoredStops: [DoorstepDropoffSDK.DeliveryStop] {
+    get
+  }
   @objc deinit
+}
+public struct DeliveryStop : Swift.Codable, Swift.Sendable, Swift.Equatable {
+  public let deliveryId: Swift.String
+  public let address: Swift.String
+  public let latitude: Swift.Double
+  public let longitude: Swift.Double
+  public let radiusMeters: Swift.Double?
+  public let customerId: Swift.String?
+  public let driverId: Swift.String?
+  public init(deliveryId: Swift.String, address: Swift.String, latitude: Swift.Double, longitude: Swift.Double, radiusMeters: Swift.Double? = nil, customerId: Swift.String? = nil, driverId: Swift.String? = nil)
+  public static func == (a: DoorstepDropoffSDK.DeliveryStop, b: DoorstepDropoffSDK.DeliveryStop) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RouteGeofenceOptions : Swift.Codable, Swift.Sendable, Swift.Equatable {
+  public var defaultRadiusMeters: Swift.Double
+  public var timeoutSeconds: Foundation.TimeInterval?
+  public var autoStopAfterDropoffSeconds: Foundation.TimeInterval?
+  public init(defaultRadiusMeters: Swift.Double = 250, timeoutSeconds: Foundation.TimeInterval? = nil, autoStopAfterDropoffSeconds: Foundation.TimeInterval? = nil)
+  public static func == (a: DoorstepDropoffSDK.RouteGeofenceOptions, b: DoorstepDropoffSDK.RouteGeofenceOptions) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_Concurrency.MainActor @preconcurrency public struct DoorstepAIRoot : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public init()
@@ -109,6 +181,7 @@ public enum DropoffType : Swift.String, Swift.Codable {
 }
 public var csvOnlyMode: Swift.Bool
 public var lastCSVSessionDirectory: Foundation.URL?
+public var bleScanningEnabled: Swift.Bool
 extension DoorstepDropoffSDK.SDKLogLevel : Swift.Hashable {}
 extension DoorstepDropoffSDK.SDKLogLevel : Swift.RawRepresentable {}
 extension DoorstepDropoffSDK.DropoffType : Swift.Equatable {}
