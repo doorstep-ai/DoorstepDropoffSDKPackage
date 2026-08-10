@@ -13,6 +13,7 @@ import SQLite3
 import Swift
 import SwiftUI
 import UIKit
+import UserNotifications
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -111,6 +112,7 @@ extension DoorstepDropoffSDK.AddressType : DoorstepDropoffSDK.AddressDesignation
 public enum DoorstepAIError : Swift.Error {
   case sessionCreationFailed(Swift.String)
   case invalidAddress
+  case unknownDeliveryId(Swift.String)
 }
 public enum DropoffType : Swift.String, Swift.Codable {
   case pod
@@ -126,10 +128,12 @@ public enum DropoffType : Swift.String, Swift.Codable {
   public static let configDidFailToLoadNotification: Foundation.Notification.Name
   public static let geofenceSessionStartedNotification: Foundation.Notification.Name
   public static let geofenceSessionStoppedNotification: Foundation.Notification.Name
+  public static let sessionServerIdAssignedNotification: Foundation.Notification.Name
   public static func setApiKey(key: Swift.String, initCollectors: Swift.Bool = true, shouldGetConfig: Swift.Bool = true)
   public static func setBackgroundSessionCompletionHandler(_ handler: @escaping () -> Swift.Void)
-  public static func requestAllPermissions(requestAlwaysLocation: Swift.Bool = true, requestBluetooth: Swift.Bool = false)
+  public static func requestAllPermissions(requestAlwaysLocation: Swift.Bool = true, requestBluetooth: Swift.Bool = true, onlyIfNotDetermined: Swift.Bool = true)
   public static func configureRemoteLogging(enabled: Swift.Bool, minLevel: DoorstepDropoffSDK.SDKLogLevel = .warning, flushInterval: Foundation.TimeInterval = 30, batchSize: Swift.Int = 50, maxQueueSize: Swift.Int = 1000)
+  public static func debugStateJson() -> Swift.String
   public static func enableDevMode(apiKey: Swift.String) async
   public static func startDeliveryByPlaceID(placeID: Swift.String, deliveryId: Swift.String, customerId: Swift.String? = nil, driverId: Swift.String? = nil, timeoutSeconds: Foundation.TimeInterval? = nil, autoStopAfterDropoffSeconds: Foundation.TimeInterval? = nil) async throws
   @available(*, deprecated, message: "Use startDeliveryByAddressType(address:deliveryId:coordinates:timeoutSeconds:autoStopAfterDropoffSeconds:) or startDeliveryByAddressString(address:deliveryId:coordinates:timeoutSeconds:autoStopAfterDropoffSeconds:) instead.")
@@ -179,9 +183,15 @@ public struct RouteGeofenceOptions : Swift.Codable, Swift.Sendable, Swift.Equata
   }
   public typealias Body = @_opaqueReturnTypeOf("$s18DoorstepDropoffSDK0A6AIRootV4bodyQrvp", 0) __
 }
-public var csvOnlyMode: Swift.Bool
-public var lastCSVSessionDirectory: Foundation.URL?
-public var bleScanningEnabled: Swift.Bool
+public var csvOnlyMode: Swift.Bool {
+  get
+}
+public var lastCSVSessionDirectory: Foundation.URL? {
+  get
+}
+public var bleScanningEnabled: Swift.Bool {
+  get
+}
 extension DoorstepDropoffSDK.SDKLogLevel : Swift.Hashable {}
 extension DoorstepDropoffSDK.SDKLogLevel : Swift.RawRepresentable {}
 extension DoorstepDropoffSDK.DropoffType : Swift.Equatable {}
