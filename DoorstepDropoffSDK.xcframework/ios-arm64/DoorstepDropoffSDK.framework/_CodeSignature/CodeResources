@@ -18,23 +18,23 @@
 		</data>
 		<key>Modules/DoorstepDropoffSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		WN0g/J7KSMM3eCADWuwzs/C5FAo=
+		RC0Td5v4Kkskb1VvJziQgKLYw3w=
 		</data>
 		<key>Modules/DoorstepDropoffSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		9CO6CNqQ9ks0NyOMdcGdz2tcBRg=
+		JdjXDCIjK1x2j6Bb5A+ygOHxUGU=
 		</data>
 		<key>Modules/DoorstepDropoffSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		6ouf2E1tyEQcoDQelTj4Wn25vBc=
+		XtVwtfamWccsg+wiQGgJ4e4Yvkg=
 		</data>
 		<key>Modules/DoorstepDropoffSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		9CO6CNqQ9ks0NyOMdcGdz2tcBRg=
+		JdjXDCIjK1x2j6Bb5A+ygOHxUGU=
 		</data>
 		<key>Modules/DoorstepDropoffSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		sN9UUG3D5JGC+sMt0NrJFGw9oT8=
+		6rkFFRtsldNv3iU4FYRpmzPUtPg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -65,35 +65,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a+B6NHPlh3Sbv/YX2HhDVsBDhnH7IF3kZ28NllViWl0=
+			x9mrdjBosoT8Dte+Vj3uTdnFBZoSfB4AEcMxAmQdvj0=
 			</data>
 		</dict>
 		<key>Modules/DoorstepDropoffSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9CW1BlwmNvNBZUigWIt9w31boc0ckHFESaCcqR+l/jw=
+			9yiq4XxbZPbigD4+v9nOj+xqY4J6wwVCIcHgUL78mJM=
 			</data>
 		</dict>
 		<key>Modules/DoorstepDropoffSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			h3mNV0T6duvhgZaI7Bnv3PD+ZZPU7dLh2+xlV7VgcI0=
+			lfg6JkplI/YEmokkTsNxBdI0wa4sYwfX+MQWnlmuOfY=
 			</data>
 		</dict>
 		<key>Modules/DoorstepDropoffSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9CW1BlwmNvNBZUigWIt9w31boc0ckHFESaCcqR+l/jw=
+			9yiq4XxbZPbigD4+v9nOj+xqY4J6wwVCIcHgUL78mJM=
 			</data>
 		</dict>
 		<key>Modules/DoorstepDropoffSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NBfn7CaS0LXPl15n1m1B5Gjyn8tbGlh0Mj9g/anh7tY=
+			3WRBEobMutFlOHaPYJQDSMwi7yH1tDg4YrVWqWwXC50=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

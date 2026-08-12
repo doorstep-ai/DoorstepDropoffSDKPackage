@@ -14,10 +14,28 @@ import Swift
 import SwiftUI
 import UIKit
 import UserNotifications
+import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+import _WebKit_SwiftUI
 import os
+public enum EmbedMode : Swift.String, Swift.Sendable {
+  case preview
+  case compact
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_Concurrency.MainActor @preconcurrency public struct DoorstepEmbedView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(address: Swift.String, deliveryID: Swift.String? = nil, linkAPI: Swift.String = "https://api.core.doorstep.ai", mode: SwiftUICore.Binding<DoorstepDropoffSDK.EmbedMode>? = nil, inlineHeight: CoreFoundation.CGFloat = 300, expandedHeight: CoreFoundation.CGFloat = 600, baseMap: Swift.String = "light", parkingText: Swift.String = "95% of drivers parked here", markerColor: Swift.String = "#027FB8", polygonColor: Swift.String = "#3291BC", parkingColor: Swift.String = "#FF847B", onModeChanged: ((DoorstepDropoffSDK.EmbedMode) -> Swift.Void)? = nil, onError: ((Swift.String) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s18DoorstepDropoffSDK0A9EmbedViewV4bodyQrvp", 0) __
+}
 public enum SDKLogLevel : Swift.Int, Swift.Codable, Swift.Comparable {
   case debug
   case info
@@ -130,7 +148,12 @@ public enum DropoffType : Swift.String, Swift.Codable {
   public static let geofenceSessionStoppedNotification: Foundation.Notification.Name
   public static let sessionServerIdAssignedNotification: Foundation.Notification.Name
   public static func setApiKey(key: Swift.String, initCollectors: Swift.Bool = true, shouldGetConfig: Swift.Bool = true)
+  public static func setDoorstepGoApiKey(key: Swift.String)
   public static func setBackgroundSessionCompletionHandler(_ handler: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor public static func checkPermissions(_ permissions: [DoorstepDropoffSDK.DoorstepPermission] = DoorstepPermission.all) -> [DoorstepDropoffSDK.DoorstepPermission : DoorstepDropoffSDK.DoorstepPermissionStatus]
+  @_Concurrency.MainActor public static func checkPermission(_ permission: DoorstepDropoffSDK.DoorstepPermission) -> DoorstepDropoffSDK.DoorstepPermissionStatus
+  @_Concurrency.MainActor public static func checkPermissionsJson(_ permissions: [DoorstepDropoffSDK.DoorstepPermission] = DoorstepPermission.all) -> Swift.String
+  @_Concurrency.MainActor public static func requestPermissions(_ permissions: [DoorstepDropoffSDK.DoorstepPermission] = DoorstepPermission.all, onlyIfNotDetermined: Swift.Bool = true, timeout: Foundation.TimeInterval = 120, completion: ((DoorstepDropoffSDK.DoorstepPermissionRequestResult) -> Swift.Void)? = nil)
   public static func requestAllPermissions(requestAlwaysLocation: Swift.Bool = true, requestBluetooth: Swift.Bool = true, onlyIfNotDetermined: Swift.Bool = true)
   public static func configureRemoteLogging(enabled: Swift.Bool, minLevel: DoorstepDropoffSDK.SDKLogLevel = .warning, flushInterval: Foundation.TimeInterval = 30, batchSize: Swift.Int = 50, maxQueueSize: Swift.Int = 1000)
   public static func debugStateJson() -> Swift.String
@@ -153,6 +176,54 @@ public enum DropoffType : Swift.String, Swift.Codable {
     get
   }
   @objc deinit
+}
+public enum DoorstepPermission : Swift.String, Swift.CaseIterable, Swift.Sendable {
+  case locationWhenInUse
+  case locationAlways
+  case motionFitness
+  case bluetooth
+  public static let all: [DoorstepDropoffSDK.DoorstepPermission]
+  public static func from(wireName: Swift.String) -> DoorstepDropoffSDK.DoorstepPermission?
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [DoorstepDropoffSDK.DoorstepPermission]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [DoorstepDropoffSDK.DoorstepPermission] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum DoorstepPermissionState : Swift.String, Swift.Sendable {
+  case granted
+  case notDetermined
+  case whenInUseOnly
+  case denied
+  case permanentlyDenied
+  case restricted
+  case unavailable
+  case notDeclared
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct DoorstepPermissionStatus : Swift.Sendable {
+  public let permission: DoorstepDropoffSDK.DoorstepPermission
+  public let state: DoorstepDropoffSDK.DoorstepPermissionState
+  public let osStatus: Swift.String
+  public let canRequest: Swift.Bool
+}
+public struct DoorstepPermissionRequestResult : Swift.Sendable {
+  public let requested: [DoorstepDropoffSDK.DoorstepPermission]
+  public let alreadyDetermined: [DoorstepDropoffSDK.DoorstepPermission]
+  public let unavailable: [DoorstepDropoffSDK.DoorstepPermission]
+  public let deferred: [DoorstepDropoffSDK.DoorstepPermission : Swift.String]
+  public let statuses: [DoorstepDropoffSDK.DoorstepPermission : DoorstepDropoffSDK.DoorstepPermissionStatus]
+  public var didRequest: Swift.Bool {
+    get
+  }
 }
 public struct DeliveryStop : Swift.Codable, Swift.Sendable, Swift.Equatable {
   public let deliveryId: Swift.String
@@ -192,9 +263,19 @@ public var lastCSVSessionDirectory: Foundation.URL? {
 public var bleScanningEnabled: Swift.Bool {
   get
 }
+extension DoorstepDropoffSDK.EmbedMode : Swift.Equatable {}
+extension DoorstepDropoffSDK.EmbedMode : Swift.Hashable {}
+extension DoorstepDropoffSDK.EmbedMode : Swift.RawRepresentable {}
+extension DoorstepDropoffSDK.DoorstepEmbedView : Swift.Sendable {}
 extension DoorstepDropoffSDK.SDKLogLevel : Swift.Hashable {}
 extension DoorstepDropoffSDK.SDKLogLevel : Swift.RawRepresentable {}
 extension DoorstepDropoffSDK.DropoffType : Swift.Equatable {}
 extension DoorstepDropoffSDK.DropoffType : Swift.Hashable {}
 extension DoorstepDropoffSDK.DropoffType : Swift.RawRepresentable {}
+extension DoorstepDropoffSDK.DoorstepPermission : Swift.Equatable {}
+extension DoorstepDropoffSDK.DoorstepPermission : Swift.Hashable {}
+extension DoorstepDropoffSDK.DoorstepPermission : Swift.RawRepresentable {}
+extension DoorstepDropoffSDK.DoorstepPermissionState : Swift.Equatable {}
+extension DoorstepDropoffSDK.DoorstepPermissionState : Swift.Hashable {}
+extension DoorstepDropoffSDK.DoorstepPermissionState : Swift.RawRepresentable {}
 extension DoorstepDropoffSDK.DoorstepAIRoot : Swift.Sendable {}

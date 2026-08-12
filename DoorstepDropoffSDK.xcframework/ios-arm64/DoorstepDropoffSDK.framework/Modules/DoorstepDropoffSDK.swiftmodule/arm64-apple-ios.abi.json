@@ -6,6 +6,571 @@
     "children": [
       {
         "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "DoorstepDropoffSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "DoorstepDropoffSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "DoorstepDropoffSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EmbedMode",
+        "printedName": "EmbedMode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "preview",
+            "printedName": "preview",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DoorstepDropoffSDK.EmbedMode.Type) -> DoorstepDropoffSDK.EmbedMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EmbedMode",
+                    "printedName": "DoorstepDropoffSDK.EmbedMode",
+                    "usr": "s:18DoorstepDropoffSDK9EmbedModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DoorstepDropoffSDK.EmbedMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EmbedMode",
+                        "printedName": "DoorstepDropoffSDK.EmbedMode",
+                        "usr": "s:18DoorstepDropoffSDK9EmbedModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18DoorstepDropoffSDK9EmbedModeO7previewyA2CmF",
+            "mangledName": "$s18DoorstepDropoffSDK9EmbedModeO7previewyA2CmF",
+            "moduleName": "DoorstepDropoffSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "compact",
+            "printedName": "compact",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DoorstepDropoffSDK.EmbedMode.Type) -> DoorstepDropoffSDK.EmbedMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EmbedMode",
+                    "printedName": "DoorstepDropoffSDK.EmbedMode",
+                    "usr": "s:18DoorstepDropoffSDK9EmbedModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DoorstepDropoffSDK.EmbedMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EmbedMode",
+                        "printedName": "DoorstepDropoffSDK.EmbedMode",
+                        "usr": "s:18DoorstepDropoffSDK9EmbedModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18DoorstepDropoffSDK9EmbedModeO7compactyA2CmF",
+            "mangledName": "$s18DoorstepDropoffSDK9EmbedModeO7compactyA2CmF",
+            "moduleName": "DoorstepDropoffSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DoorstepDropoffSDK.EmbedMode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EmbedMode",
+                    "printedName": "DoorstepDropoffSDK.EmbedMode",
+                    "usr": "s:18DoorstepDropoffSDK9EmbedModeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18DoorstepDropoffSDK9EmbedModeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s18DoorstepDropoffSDK9EmbedModeO8rawValueACSgSS_tcfc",
+            "moduleName": "DoorstepDropoffSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DoorstepDropoffSDK9EmbedModeO8rawValueSSvp",
+            "mangledName": "$s18DoorstepDropoffSDK9EmbedModeO8rawValueSSvp",
+            "moduleName": "DoorstepDropoffSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DoorstepDropoffSDK9EmbedModeO8rawValueSSvg",
+                "mangledName": "$s18DoorstepDropoffSDK9EmbedModeO8rawValueSSvg",
+                "moduleName": "DoorstepDropoffSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:18DoorstepDropoffSDK9EmbedModeO",
+        "mangledName": "$s18DoorstepDropoffSDK9EmbedModeO",
+        "moduleName": "DoorstepDropoffSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DoorstepEmbedView",
+        "printedName": "DoorstepEmbedView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(address:deliveryID:linkAPI:mode:inlineHeight:expandedHeight:baseMap:parkingText:markerColor:polygonColor:parkingColor:onModeChanged:onError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DoorstepEmbedView",
+                "printedName": "DoorstepDropoffSDK.DoorstepEmbedView",
+                "usr": "s:18DoorstepDropoffSDK0A9EmbedViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SwiftUI.Binding<DoorstepDropoffSDK.EmbedMode>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Binding",
+                    "printedName": "SwiftUI.Binding<DoorstepDropoffSDK.EmbedMode>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EmbedMode",
+                        "printedName": "DoorstepDropoffSDK.EmbedMode",
+                        "usr": "s:18DoorstepDropoffSDK9EmbedModeO"
+                      }
+                    ],
+                    "usr": "s:7SwiftUI7BindingV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((DoorstepDropoffSDK.EmbedMode) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DoorstepDropoffSDK.EmbedMode) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EmbedMode",
+                        "printedName": "DoorstepDropoffSDK.EmbedMode",
+                        "usr": "s:18DoorstepDropoffSDK9EmbedModeO"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18DoorstepDropoffSDK0A9EmbedViewV7address10deliveryID7linkAPI4mode12inlineHeight08expandedM07baseMap11parkingText11markerColor07polygonT00qT013onModeChanged0V5ErrorACSS_SSSgSS7SwiftUI7BindingVyAA0dW0OGSg14CoreFoundation7CGFloatVA_S5SyAVcSgySScSgtcfc",
+            "mangledName": "$s18DoorstepDropoffSDK0A9EmbedViewV7address10deliveryID7linkAPI4mode12inlineHeight08expandedM07baseMap11parkingText11markerColor07polygonT00qT013onModeChanged0V5ErrorACSS_SSSgSS7SwiftUI7BindingVyAA0dW0OGSg12CoreGraphics7CGFloatVA_S5SyAVcSgySScSgtcfc",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DoorstepDropoffSDK0A9EmbedViewV4bodyQrvp",
+            "mangledName": "$s18DoorstepDropoffSDK0A9EmbedViewV4bodyQrvp",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DoorstepDropoffSDK0A9EmbedViewV4bodyQrvg",
+                "mangledName": "$s18DoorstepDropoffSDK0A9EmbedViewV4bodyQrvg",
+                "moduleName": "DoorstepDropoffSDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18DoorstepDropoffSDK0A9EmbedViewV",
+        "mangledName": "$s18DoorstepDropoffSDK0A9EmbedViewV",
+        "moduleName": "DoorstepDropoffSDK",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DoorstepDropoffSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -3841,6 +4406,35 @@
           },
           {
             "kind": "Function",
+            "name": "setDoorstepGoApiKey",
+            "printedName": "setDoorstepGoApiKey(key:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18DoorstepDropoffSDK0A2AIC03setA8GoApiKey3keyySS_tFZ",
+            "mangledName": "$s18DoorstepDropoffSDK0A2AIC03setA8GoApiKey3keyySS_tFZ",
+            "moduleName": "DoorstepDropoffSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setBackgroundSessionCompletionHandler",
             "printedName": "setBackgroundSessionCompletionHandler(_:)",
             "children": [
@@ -3875,6 +4469,211 @@
             "declAttributes": [
               "Final",
               "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkPermissions",
+            "printedName": "checkPermissions(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[DoorstepDropoffSDK.DoorstepPermission : DoorstepDropoffSDK.DoorstepPermissionStatus]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermission",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                    "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermissionStatus",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermissionStatus",
+                    "usr": "s:18DoorstepDropoffSDK0A16PermissionStatusV"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[DoorstepDropoffSDK.DoorstepPermission]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermission",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                    "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18DoorstepDropoffSDK0A2AIC16checkPermissionsySDyAA0A10PermissionOAA0aG6StatusVGSayAFGFZ",
+            "mangledName": "$s18DoorstepDropoffSDK0A2AIC16checkPermissionsySDyAA0A10PermissionOAA0aG6StatusVGSayAFGFZ",
+            "moduleName": "DoorstepDropoffSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Custom",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkPermission",
+            "printedName": "checkPermission(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DoorstepPermissionStatus",
+                "printedName": "DoorstepDropoffSDK.DoorstepPermissionStatus",
+                "usr": "s:18DoorstepDropoffSDK0A16PermissionStatusV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DoorstepPermission",
+                "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18DoorstepDropoffSDK0A2AIC15checkPermissionyAA0aF6StatusVAA0aF0OFZ",
+            "mangledName": "$s18DoorstepDropoffSDK0A2AIC15checkPermissionyAA0aF6StatusVAA0aF0OFZ",
+            "moduleName": "DoorstepDropoffSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Custom",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkPermissionsJson",
+            "printedName": "checkPermissionsJson(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[DoorstepDropoffSDK.DoorstepPermission]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermission",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                    "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18DoorstepDropoffSDK0A2AIC20checkPermissionsJsonySSSayAA0A10PermissionOGFZ",
+            "mangledName": "$s18DoorstepDropoffSDK0A2AIC20checkPermissionsJsonySSSayAA0A10PermissionOGFZ",
+            "moduleName": "DoorstepDropoffSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Custom",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestPermissions",
+            "printedName": "requestPermissions(_:onlyIfNotDetermined:timeout:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[DoorstepDropoffSDK.DoorstepPermission]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermission",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                    "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((DoorstepDropoffSDK.DoorstepPermissionRequestResult) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DoorstepDropoffSDK.DoorstepPermissionRequestResult) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DoorstepPermissionRequestResult",
+                        "printedName": "DoorstepDropoffSDK.DoorstepPermissionRequestResult",
+                        "usr": "s:18DoorstepDropoffSDK0A23PermissionRequestResultV"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18DoorstepDropoffSDK0A2AIC18requestPermissions_19onlyIfNotDetermined7timeout10completionySayAA0A10PermissionOG_SbSdyAA0aM13RequestResultVcSgtFZ",
+            "mangledName": "$s18DoorstepDropoffSDK0A2AIC18requestPermissions_19onlyIfNotDetermined7timeout10completionySayAA0A10PermissionOG_SbSdyAA0aM13RequestResultVcSgtFZ",
+            "moduleName": "DoorstepDropoffSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Custom",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -4901,6 +5700,1654 @@
         "printedName": "CoreLocation",
         "declKind": "Import",
         "moduleName": "DoorstepDropoffSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DoorstepDropoffSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "DoorstepDropoffSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMotion",
+        "printedName": "CoreMotion",
+        "declKind": "Import",
+        "moduleName": "DoorstepDropoffSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "DoorstepDropoffSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DoorstepPermission",
+        "printedName": "DoorstepPermission",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "locationWhenInUse",
+            "printedName": "locationWhenInUse",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DoorstepDropoffSDK.DoorstepPermission.Type) -> DoorstepDropoffSDK.DoorstepPermission",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermission",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                    "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermission.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DoorstepPermission",
+                        "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                        "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18DoorstepDropoffSDK0A10PermissionO17locationWhenInUseyA2CmF",
+            "mangledName": "$s18DoorstepDropoffSDK0A10PermissionO17locationWhenInUseyA2CmF",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "locationAlways",
+            "printedName": "locationAlways",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DoorstepDropoffSDK.DoorstepPermission.Type) -> DoorstepDropoffSDK.DoorstepPermission",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermission",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                    "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermission.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DoorstepPermission",
+                        "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                        "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18DoorstepDropoffSDK0A10PermissionO14locationAlwaysyA2CmF",
+            "mangledName": "$s18DoorstepDropoffSDK0A10PermissionO14locationAlwaysyA2CmF",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "motionFitness",
+            "printedName": "motionFitness",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DoorstepDropoffSDK.DoorstepPermission.Type) -> DoorstepDropoffSDK.DoorstepPermission",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermission",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                    "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermission.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DoorstepPermission",
+                        "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                        "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18DoorstepDropoffSDK0A10PermissionO13motionFitnessyA2CmF",
+            "mangledName": "$s18DoorstepDropoffSDK0A10PermissionO13motionFitnessyA2CmF",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bluetooth",
+            "printedName": "bluetooth",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DoorstepDropoffSDK.DoorstepPermission.Type) -> DoorstepDropoffSDK.DoorstepPermission",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermission",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                    "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermission.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DoorstepPermission",
+                        "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                        "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18DoorstepDropoffSDK0A10PermissionO9bluetoothyA2CmF",
+            "mangledName": "$s18DoorstepDropoffSDK0A10PermissionO9bluetoothyA2CmF",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "all",
+            "printedName": "all",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[DoorstepDropoffSDK.DoorstepPermission]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermission",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                    "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DoorstepDropoffSDK0A10PermissionO3allSayACGvpZ",
+            "mangledName": "$s18DoorstepDropoffSDK0A10PermissionO3allSayACGvpZ",
+            "moduleName": "DoorstepDropoffSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[DoorstepDropoffSDK.DoorstepPermission]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DoorstepPermission",
+                        "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                        "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DoorstepDropoffSDK0A10PermissionO3allSayACGvgZ",
+                "mangledName": "$s18DoorstepDropoffSDK0A10PermissionO3allSayACGvgZ",
+                "moduleName": "DoorstepDropoffSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "from",
+            "printedName": "from(wireName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DoorstepDropoffSDK.DoorstepPermission?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermission",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                    "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18DoorstepDropoffSDK0A10PermissionO4from8wireNameACSgSS_tFZ",
+            "mangledName": "$s18DoorstepDropoffSDK0A10PermissionO4from8wireNameACSgSS_tFZ",
+            "moduleName": "DoorstepDropoffSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[DoorstepDropoffSDK.DoorstepPermission]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermission",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                    "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DoorstepDropoffSDK0A10PermissionO8allCasesSayACGvpZ",
+            "mangledName": "$s18DoorstepDropoffSDK0A10PermissionO8allCasesSayACGvpZ",
+            "moduleName": "DoorstepDropoffSDK",
+            "static": true,
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[DoorstepDropoffSDK.DoorstepPermission]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DoorstepPermission",
+                        "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                        "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DoorstepDropoffSDK0A10PermissionO8allCasesSayACGvgZ",
+                "mangledName": "$s18DoorstepDropoffSDK0A10PermissionO8allCasesSayACGvgZ",
+                "moduleName": "DoorstepDropoffSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DoorstepDropoffSDK.DoorstepPermission?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermission",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                    "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18DoorstepDropoffSDK0A10PermissionO8rawValueACSgSS_tcfc",
+            "mangledName": "$s18DoorstepDropoffSDK0A10PermissionO8rawValueACSgSS_tcfc",
+            "moduleName": "DoorstepDropoffSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DoorstepDropoffSDK0A10PermissionO8rawValueSSvp",
+            "mangledName": "$s18DoorstepDropoffSDK0A10PermissionO8rawValueSSvp",
+            "moduleName": "DoorstepDropoffSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DoorstepDropoffSDK0A10PermissionO8rawValueSSvg",
+                "mangledName": "$s18DoorstepDropoffSDK0A10PermissionO8rawValueSSvg",
+                "moduleName": "DoorstepDropoffSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:18DoorstepDropoffSDK0A10PermissionO",
+        "mangledName": "$s18DoorstepDropoffSDK0A10PermissionO",
+        "moduleName": "DoorstepDropoffSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[DoorstepDropoffSDK.DoorstepPermission]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DoorstepPermission",
+                        "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                        "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DoorstepPermissionState",
+        "printedName": "DoorstepPermissionState",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "granted",
+            "printedName": "granted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DoorstepDropoffSDK.DoorstepPermissionState.Type) -> DoorstepDropoffSDK.DoorstepPermissionState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermissionState",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermissionState",
+                    "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermissionState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DoorstepPermissionState",
+                        "printedName": "DoorstepDropoffSDK.DoorstepPermissionState",
+                        "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO7grantedyA2CmF",
+            "mangledName": "$s18DoorstepDropoffSDK0A15PermissionStateO7grantedyA2CmF",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "notDetermined",
+            "printedName": "notDetermined",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DoorstepDropoffSDK.DoorstepPermissionState.Type) -> DoorstepDropoffSDK.DoorstepPermissionState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermissionState",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermissionState",
+                    "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermissionState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DoorstepPermissionState",
+                        "printedName": "DoorstepDropoffSDK.DoorstepPermissionState",
+                        "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO13notDeterminedyA2CmF",
+            "mangledName": "$s18DoorstepDropoffSDK0A15PermissionStateO13notDeterminedyA2CmF",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "whenInUseOnly",
+            "printedName": "whenInUseOnly",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DoorstepDropoffSDK.DoorstepPermissionState.Type) -> DoorstepDropoffSDK.DoorstepPermissionState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermissionState",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermissionState",
+                    "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermissionState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DoorstepPermissionState",
+                        "printedName": "DoorstepDropoffSDK.DoorstepPermissionState",
+                        "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO13whenInUseOnlyyA2CmF",
+            "mangledName": "$s18DoorstepDropoffSDK0A15PermissionStateO13whenInUseOnlyyA2CmF",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "denied",
+            "printedName": "denied",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DoorstepDropoffSDK.DoorstepPermissionState.Type) -> DoorstepDropoffSDK.DoorstepPermissionState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermissionState",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermissionState",
+                    "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermissionState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DoorstepPermissionState",
+                        "printedName": "DoorstepDropoffSDK.DoorstepPermissionState",
+                        "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO6deniedyA2CmF",
+            "mangledName": "$s18DoorstepDropoffSDK0A15PermissionStateO6deniedyA2CmF",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "permanentlyDenied",
+            "printedName": "permanentlyDenied",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DoorstepDropoffSDK.DoorstepPermissionState.Type) -> DoorstepDropoffSDK.DoorstepPermissionState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermissionState",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermissionState",
+                    "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermissionState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DoorstepPermissionState",
+                        "printedName": "DoorstepDropoffSDK.DoorstepPermissionState",
+                        "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO17permanentlyDeniedyA2CmF",
+            "mangledName": "$s18DoorstepDropoffSDK0A15PermissionStateO17permanentlyDeniedyA2CmF",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "restricted",
+            "printedName": "restricted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DoorstepDropoffSDK.DoorstepPermissionState.Type) -> DoorstepDropoffSDK.DoorstepPermissionState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermissionState",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermissionState",
+                    "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermissionState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DoorstepPermissionState",
+                        "printedName": "DoorstepDropoffSDK.DoorstepPermissionState",
+                        "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO10restrictedyA2CmF",
+            "mangledName": "$s18DoorstepDropoffSDK0A15PermissionStateO10restrictedyA2CmF",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unavailable",
+            "printedName": "unavailable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DoorstepDropoffSDK.DoorstepPermissionState.Type) -> DoorstepDropoffSDK.DoorstepPermissionState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermissionState",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermissionState",
+                    "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermissionState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DoorstepPermissionState",
+                        "printedName": "DoorstepDropoffSDK.DoorstepPermissionState",
+                        "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO11unavailableyA2CmF",
+            "mangledName": "$s18DoorstepDropoffSDK0A15PermissionStateO11unavailableyA2CmF",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "notDeclared",
+            "printedName": "notDeclared",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DoorstepDropoffSDK.DoorstepPermissionState.Type) -> DoorstepDropoffSDK.DoorstepPermissionState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermissionState",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermissionState",
+                    "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermissionState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DoorstepPermissionState",
+                        "printedName": "DoorstepDropoffSDK.DoorstepPermissionState",
+                        "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO11notDeclaredyA2CmF",
+            "mangledName": "$s18DoorstepDropoffSDK0A15PermissionStateO11notDeclaredyA2CmF",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DoorstepDropoffSDK.DoorstepPermissionState?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermissionState",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermissionState",
+                    "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO8rawValueACSgSS_tcfc",
+            "mangledName": "$s18DoorstepDropoffSDK0A15PermissionStateO8rawValueACSgSS_tcfc",
+            "moduleName": "DoorstepDropoffSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO8rawValueSSvp",
+            "mangledName": "$s18DoorstepDropoffSDK0A15PermissionStateO8rawValueSSvp",
+            "moduleName": "DoorstepDropoffSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO8rawValueSSvg",
+                "mangledName": "$s18DoorstepDropoffSDK0A15PermissionStateO8rawValueSSvg",
+                "moduleName": "DoorstepDropoffSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO",
+        "mangledName": "$s18DoorstepDropoffSDK0A15PermissionStateO",
+        "moduleName": "DoorstepDropoffSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DoorstepPermissionStatus",
+        "printedName": "DoorstepPermissionStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "permission",
+            "printedName": "permission",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DoorstepPermission",
+                "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DoorstepDropoffSDK0A16PermissionStatusV10permissionAA0aD0Ovp",
+            "mangledName": "$s18DoorstepDropoffSDK0A16PermissionStatusV10permissionAA0aD0Ovp",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermission",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                    "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DoorstepDropoffSDK0A16PermissionStatusV10permissionAA0aD0Ovg",
+                "mangledName": "$s18DoorstepDropoffSDK0A16PermissionStatusV10permissionAA0aD0Ovg",
+                "moduleName": "DoorstepDropoffSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "state",
+            "printedName": "state",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DoorstepPermissionState",
+                "printedName": "DoorstepDropoffSDK.DoorstepPermissionState",
+                "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DoorstepDropoffSDK0A16PermissionStatusV5stateAA0aD5StateOvp",
+            "mangledName": "$s18DoorstepDropoffSDK0A16PermissionStatusV5stateAA0aD5StateOvp",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermissionState",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermissionState",
+                    "usr": "s:18DoorstepDropoffSDK0A15PermissionStateO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DoorstepDropoffSDK0A16PermissionStatusV5stateAA0aD5StateOvg",
+                "mangledName": "$s18DoorstepDropoffSDK0A16PermissionStatusV5stateAA0aD5StateOvg",
+                "moduleName": "DoorstepDropoffSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "osStatus",
+            "printedName": "osStatus",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DoorstepDropoffSDK0A16PermissionStatusV02osE0SSvp",
+            "mangledName": "$s18DoorstepDropoffSDK0A16PermissionStatusV02osE0SSvp",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DoorstepDropoffSDK0A16PermissionStatusV02osE0SSvg",
+                "mangledName": "$s18DoorstepDropoffSDK0A16PermissionStatusV02osE0SSvg",
+                "moduleName": "DoorstepDropoffSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "canRequest",
+            "printedName": "canRequest",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DoorstepDropoffSDK0A16PermissionStatusV10canRequestSbvp",
+            "mangledName": "$s18DoorstepDropoffSDK0A16PermissionStatusV10canRequestSbvp",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DoorstepDropoffSDK0A16PermissionStatusV10canRequestSbvg",
+                "mangledName": "$s18DoorstepDropoffSDK0A16PermissionStatusV10canRequestSbvg",
+                "moduleName": "DoorstepDropoffSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18DoorstepDropoffSDK0A16PermissionStatusV",
+        "mangledName": "$s18DoorstepDropoffSDK0A16PermissionStatusV",
+        "moduleName": "DoorstepDropoffSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DoorstepPermissionRequestResult",
+        "printedName": "DoorstepPermissionRequestResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "requested",
+            "printedName": "requested",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[DoorstepDropoffSDK.DoorstepPermission]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermission",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                    "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DoorstepDropoffSDK0A23PermissionRequestResultV9requestedSayAA0aD0OGvp",
+            "mangledName": "$s18DoorstepDropoffSDK0A23PermissionRequestResultV9requestedSayAA0aD0OGvp",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[DoorstepDropoffSDK.DoorstepPermission]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DoorstepPermission",
+                        "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                        "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DoorstepDropoffSDK0A23PermissionRequestResultV9requestedSayAA0aD0OGvg",
+                "mangledName": "$s18DoorstepDropoffSDK0A23PermissionRequestResultV9requestedSayAA0aD0OGvg",
+                "moduleName": "DoorstepDropoffSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "alreadyDetermined",
+            "printedName": "alreadyDetermined",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[DoorstepDropoffSDK.DoorstepPermission]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermission",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                    "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DoorstepDropoffSDK0A23PermissionRequestResultV17alreadyDeterminedSayAA0aD0OGvp",
+            "mangledName": "$s18DoorstepDropoffSDK0A23PermissionRequestResultV17alreadyDeterminedSayAA0aD0OGvp",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[DoorstepDropoffSDK.DoorstepPermission]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DoorstepPermission",
+                        "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                        "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DoorstepDropoffSDK0A23PermissionRequestResultV17alreadyDeterminedSayAA0aD0OGvg",
+                "mangledName": "$s18DoorstepDropoffSDK0A23PermissionRequestResultV17alreadyDeterminedSayAA0aD0OGvg",
+                "moduleName": "DoorstepDropoffSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unavailable",
+            "printedName": "unavailable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[DoorstepDropoffSDK.DoorstepPermission]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermission",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                    "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DoorstepDropoffSDK0A23PermissionRequestResultV11unavailableSayAA0aD0OGvp",
+            "mangledName": "$s18DoorstepDropoffSDK0A23PermissionRequestResultV11unavailableSayAA0aD0OGvp",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[DoorstepDropoffSDK.DoorstepPermission]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DoorstepPermission",
+                        "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                        "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DoorstepDropoffSDK0A23PermissionRequestResultV11unavailableSayAA0aD0OGvg",
+                "mangledName": "$s18DoorstepDropoffSDK0A23PermissionRequestResultV11unavailableSayAA0aD0OGvg",
+                "moduleName": "DoorstepDropoffSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "deferred",
+            "printedName": "deferred",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[DoorstepDropoffSDK.DoorstepPermission : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermission",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                    "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DoorstepDropoffSDK0A23PermissionRequestResultV8deferredSDyAA0aD0OSSGvp",
+            "mangledName": "$s18DoorstepDropoffSDK0A23PermissionRequestResultV8deferredSDyAA0aD0OSSGvp",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[DoorstepDropoffSDK.DoorstepPermission : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DoorstepPermission",
+                        "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                        "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DoorstepDropoffSDK0A23PermissionRequestResultV8deferredSDyAA0aD0OSSGvg",
+                "mangledName": "$s18DoorstepDropoffSDK0A23PermissionRequestResultV8deferredSDyAA0aD0OSSGvg",
+                "moduleName": "DoorstepDropoffSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "statuses",
+            "printedName": "statuses",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[DoorstepDropoffSDK.DoorstepPermission : DoorstepDropoffSDK.DoorstepPermissionStatus]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermission",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                    "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorstepPermissionStatus",
+                    "printedName": "DoorstepDropoffSDK.DoorstepPermissionStatus",
+                    "usr": "s:18DoorstepDropoffSDK0A16PermissionStatusV"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DoorstepDropoffSDK0A23PermissionRequestResultV8statusesSDyAA0aD0OAA0aD6StatusVGvp",
+            "mangledName": "$s18DoorstepDropoffSDK0A23PermissionRequestResultV8statusesSDyAA0aD0OAA0aD6StatusVGvp",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[DoorstepDropoffSDK.DoorstepPermission : DoorstepDropoffSDK.DoorstepPermissionStatus]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DoorstepPermission",
+                        "printedName": "DoorstepDropoffSDK.DoorstepPermission",
+                        "usr": "s:18DoorstepDropoffSDK0A10PermissionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DoorstepPermissionStatus",
+                        "printedName": "DoorstepDropoffSDK.DoorstepPermissionStatus",
+                        "usr": "s:18DoorstepDropoffSDK0A16PermissionStatusV"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DoorstepDropoffSDK0A23PermissionRequestResultV8statusesSDyAA0aD0OAA0aD6StatusVGvg",
+                "mangledName": "$s18DoorstepDropoffSDK0A23PermissionRequestResultV8statusesSDyAA0aD0OAA0aD6StatusVGvg",
+                "moduleName": "DoorstepDropoffSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "didRequest",
+            "printedName": "didRequest",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DoorstepDropoffSDK0A23PermissionRequestResultV03didE0Sbvp",
+            "mangledName": "$s18DoorstepDropoffSDK0A23PermissionRequestResultV03didE0Sbvp",
+            "moduleName": "DoorstepDropoffSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DoorstepDropoffSDK0A23PermissionRequestResultV03didE0Sbvg",
+                "mangledName": "$s18DoorstepDropoffSDK0A23PermissionRequestResultV03didE0Sbvg",
+                "moduleName": "DoorstepDropoffSDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18DoorstepDropoffSDK0A23PermissionRequestResultV",
+        "mangledName": "$s18DoorstepDropoffSDK0A23PermissionRequestResultV",
+        "moduleName": "DoorstepDropoffSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -7156,11 +9603,270 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2753,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2763,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2772,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "FloatLiteral",
+      "offset": 2784,
+      "length": 4,
+      "value": "0.72"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2825,
+      "length": 2,
+      "value": "45"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2830,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2842,
+      "length": 2,
+      "value": "41"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2847,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2858,
+      "length": 2,
+      "value": "41"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2863,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "FloatLiteral",
+      "offset": 2877,
+      "length": 4,
+      "value": "0.18"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2988,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2998,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3007,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "FloatLiteral",
+      "offset": 3019,
+      "length": 4,
+      "value": "0.40"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3060,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3070,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3079,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "FloatLiteral",
+      "offset": 3091,
+      "length": 4,
+      "value": "0.20"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "StringLiteral",
+      "offset": 4985,
+      "length": 11,
+      "value": "\"dsgoState\""
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5912,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5961,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6305,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6423,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7096,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7377,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "StringLiteral",
+      "offset": 13105,
+      "length": 959,
+      "value": "\"(function () {\n  const read = () => {\n    const s = getComputedStyle(document.documentElement)\n    return {\n      bg:     s.getPropertyValue('--th-button-bg').trim(),\n      border: s.getPropertyValue('--th-button-border').trim(),\n      icon:   s.getPropertyValue('--th-icon').trim(),\n      sv:     document.documentElement.dataset.sv || 'closed',\n    }\n  }\n  let last = ''\n  const post = () => {\n    const t = read()\n    if (!t.bg) return\n    const key = [t.bg, t.border, t.icon, t.sv].join('|')\n    if (key === last) return\n    last = key\n    window.webkit?.messageHandlers?.dsgoState?.postMessage(t)\n  }\n  new MutationObserver(post).observe(document.documentElement, {\n    attributes: true, attributeFilter: ['style', 'data-sv'],\n  })\n  let n = 0\n  const id = setInterval(() => { post(); if (++n > 40) clearInterval(id) }, 100)\n  post()\n})()\""
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20736,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "StringLiteral",
+      "offset": 22038,
+      "length": 30,
+      "value": "\"https:\/\/api.core.doorstep.ai\""
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "IntegerLiteral",
+      "offset": 22159,
+      "length": 3,
+      "value": "300"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "IntegerLiteral",
+      "offset": 22206,
+      "length": 3,
+      "value": "600"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "StringLiteral",
+      "offset": 22245,
+      "length": 7,
+      "value": "\"light\""
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "StringLiteral",
+      "offset": 22292,
+      "length": 28,
+      "value": "\"95% of drivers parked here\""
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "StringLiteral",
+      "offset": 22360,
+      "length": 9,
+      "value": "\"#027FB8\""
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "StringLiteral",
+      "offset": 22410,
+      "length": 9,
+      "value": "\"#3291BC\""
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "StringLiteral",
+      "offset": 22460,
+      "length": 9,
+      "value": "\"#FF847B\""
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/GoLinkService.swift",
+      "kind": "StringLiteral",
+      "offset": 2280,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/sheelpatel\/Library\/Developer\/Xcode\/DerivedData\/DoorstepDropoffSDK-cbxykpyeegxxnbavqnaopeotcgxd\/Build\/Intermediates.noindex\/ArchiveIntermediates\/DoorstepDropoffSDK\/IntermediateBuildFilesPath\/DoorstepDropoffSDK.build\/Release-iphoneos\/DoorstepDropoffSDK.build\/DerivedSources\/DoorstepAIBuildInfo.swift",
       "kind": "StringLiteral",
       "offset": 410,
-      "length": 9,
-      "value": "\"e2b95f9\""
+      "length": 15,
+      "value": "\"0356393-dirty\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DiagnosticsLedger.swift",
@@ -8796,147 +11502,161 @@
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/DoorstepAI.swift",
       "kind": "StringLiteral",
-      "offset": 6180,
+      "offset": 6174,
       "length": 26,
       "value": "\"DoorstepAI.configDidLoad\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/DoorstepAI.swift",
       "kind": "StringLiteral",
-      "offset": 6667,
+      "offset": 6661,
       "length": 32,
       "value": "\"DoorstepAI.configDidFailToLoad\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/DoorstepAI.swift",
       "kind": "StringLiteral",
-      "offset": 7001,
+      "offset": 6995,
       "length": 35,
       "value": "\"DoorstepAI.geofenceSessionStarted\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/DoorstepAI.swift",
       "kind": "StringLiteral",
-      "offset": 7325,
+      "offset": 7319,
       "length": 35,
       "value": "\"DoorstepAI.geofenceSessionStopped\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/DoorstepAI.swift",
       "kind": "StringLiteral",
-      "offset": 7966,
+      "offset": 7960,
       "length": 36,
       "value": "\"DoorstepAI.sessionServerIdAssigned\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/DoorstepAI.swift",
       "kind": "BooleanLiteral",
-      "offset": 9366,
+      "offset": 9360,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/DoorstepAI.swift",
       "kind": "BooleanLiteral",
-      "offset": 9396,
+      "offset": 9390,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/DoorstepAI.swift",
       "kind": "BooleanLiteral",
-      "offset": 14936,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/DoorstepAI.swift",
-      "kind": "BooleanLiteral",
-      "offset": 15012,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/DoorstepAI.swift",
-      "kind": "BooleanLiteral",
-      "offset": 15091,
+      "offset": 18660,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/DoorstepAI.swift",
       "kind": "IntegerLiteral",
-      "offset": 18521,
+      "offset": 18698,
+      "length": 3,
+      "value": "120"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/DoorstepAI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 21872,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/DoorstepAI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 21948,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/DoorstepAI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 22027,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/DoorstepAI.swift",
+      "kind": "IntegerLiteral",
+      "offset": 22996,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/DoorstepAI.swift",
       "kind": "IntegerLiteral",
-      "offset": 18550,
+      "offset": 23025,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/DoorstepAI.swift",
       "kind": "IntegerLiteral",
-      "offset": 18582,
+      "offset": 23057,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/DoorstepAI.swift",
       "kind": "StringLiteral",
-      "offset": 51737,
+      "offset": 56212,
       "length": 43,
       "value": "\"DoorstepAI.autoStopAfterDropoffEntries.v1\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/DoorstepAI.swift",
       "kind": "StringLiteral",
-      "offset": 51833,
+      "offset": 56308,
       "length": 38,
       "value": "\"DoorstepAI.AutoStopAfterDropoffQueue\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/DoorstepAI.swift",
       "kind": "Dictionary",
-      "offset": 52002,
+      "offset": 56477,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/DoorstepAI.swift",
       "kind": "BooleanLiteral",
-      "offset": 52060,
+      "offset": 56535,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/DoorstepAI.swift",
       "kind": "StringLiteral",
-      "offset": 65571,
+      "offset": 70046,
       "length": 39,
       "value": "\"DoorstepAI.sessionTimeoutDeadlines.v1\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/DoorstepAI.swift",
       "kind": "StringLiteral",
-      "offset": 65663,
+      "offset": 70138,
       "length": 40,
       "value": "\"DoorstepAI.SessionTimeoutBackstopQueue\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/DoorstepAI.swift",
       "kind": "Dictionary",
-      "offset": 65834,
+      "offset": 70309,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/DoorstepAI.swift",
       "kind": "BooleanLiteral",
-      "offset": 65892,
+      "offset": 70367,
       "length": 5,
       "value": "false"
     },
@@ -9009,6 +11729,132 @@
       "offset": 27072,
       "length": 10,
       "value": "\"location\""
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/Permissions.swift",
+      "kind": "StringLiteral",
+      "offset": 11729,
+      "length": 73,
+      "value": "\"requested as part of the Always prompt (iOS shows ONE location prompt; \""
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/Permissions.swift",
+      "kind": "StringLiteral",
+      "offset": 11817,
+      "length": 41,
+      "value": "\"locationWhenInUse rides locationAlways)\""
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/Permissions.swift",
+      "kind": "StringLiteral",
+      "offset": 11917,
+      "length": 79,
+      "value": "\"covered by the locationAlways prompt in this call — iOS shows one location \""
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/Permissions.swift",
+      "kind": "StringLiteral",
+      "offset": 12011,
+      "length": 59,
+      "value": "\"prompt, and asking twice is the re-escalation antipattern\""
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/Permissions.swift",
+      "kind": "StringLiteral",
+      "offset": 12120,
+      "length": 79,
+      "value": "\"already answered; iOS will not re-prompt. Pass onlyIfNotDetermined: false to \""
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/Permissions.swift",
+      "kind": "StringLiteral",
+      "offset": 12214,
+      "length": 36,
+      "value": "\"force it, or deep-link to Settings\""
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/Permissions.swift",
+      "kind": "StringLiteral",
+      "offset": 12312,
+      "length": 82,
+      "value": "\"the user chose 'While Using the App'. Upgrading to Always is THEIR decision — \""
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/Permissions.swift",
+      "kind": "StringLiteral",
+      "offset": 12409,
+      "length": 84,
+      "value": "\"drive it from your own UI (Settings deep link), or pass onlyIfNotDetermined: false\""
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/Permissions.swift",
+      "kind": "StringLiteral",
+      "offset": 12551,
+      "length": 81,
+      "value": "\"the host Info.plist is missing this permission's usage-description key, so iOS \""
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/Permissions.swift",
+      "kind": "StringLiteral",
+      "offset": 12647,
+      "length": 29,
+      "value": "\"would never show the prompt\""
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/Permissions.swift",
+      "kind": "StringLiteral",
+      "offset": 12710,
+      "length": 30,
+      "value": "\"not available on this device\""
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/Permissions.swift",
+      "kind": "Array",
+      "offset": 12812,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/Permissions.swift",
+      "kind": "Array",
+      "offset": 12869,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/Permissions.swift",
+      "kind": "Array",
+      "offset": 12920,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/Permissions.swift",
+      "kind": "Dictionary",
+      "offset": 12976,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/Permissions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 17031,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/Permissions.swift",
+      "kind": "FloatLiteral",
+      "offset": 17184,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/Permissions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17628,
+      "length": 2,
+      "value": "25"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/GeofenceManager.swift",
@@ -9776,70 +12622,70 @@
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/V3Encoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 1373,
+      "offset": 2218,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/V3Encoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2297,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/V3Encoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 1452,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/V3Encoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1534,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/V3Encoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1607,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/V3Encoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1674,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/V3Encoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1750,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/V3Encoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1821,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/V3Encoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1897,
+      "offset": 2379,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/V3Encoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 1954,
+      "offset": 2452,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/V3Encoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2519,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/V3Encoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3361,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/V3Encoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4971,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/V3Encoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5047,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/V3Encoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5104,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/V3Encoder.swift",
       "kind": "IntegerLiteral",
-      "offset": 2015,
+      "offset": 5165,
       "length": 1,
       "value": "3"
     },
