@@ -150,6 +150,7 @@ public enum DropoffType : Swift.String, Swift.Codable {
   public static func setApiKey(key: Swift.String, initCollectors: Swift.Bool = true, shouldGetConfig: Swift.Bool = true)
   public static func setDoorstepGoApiKey(key: Swift.String)
   public static func setBackgroundSessionCompletionHandler(_ handler: @escaping () -> Swift.Void)
+  public static func setBackgroundSessionCompletionHandler(_ handler: @escaping () -> Swift.Void, forSessionIdentifier identifier: Swift.String)
   @_Concurrency.MainActor public static func checkPermissions(_ permissions: [DoorstepDropoffSDK.DoorstepPermission] = DoorstepPermission.all) -> [DoorstepDropoffSDK.DoorstepPermission : DoorstepDropoffSDK.DoorstepPermissionStatus]
   @_Concurrency.MainActor public static func checkPermission(_ permission: DoorstepDropoffSDK.DoorstepPermission) -> DoorstepDropoffSDK.DoorstepPermissionStatus
   @_Concurrency.MainActor public static func checkPermissionsJson(_ permissions: [DoorstepDropoffSDK.DoorstepPermission] = DoorstepPermission.all) -> Swift.String
