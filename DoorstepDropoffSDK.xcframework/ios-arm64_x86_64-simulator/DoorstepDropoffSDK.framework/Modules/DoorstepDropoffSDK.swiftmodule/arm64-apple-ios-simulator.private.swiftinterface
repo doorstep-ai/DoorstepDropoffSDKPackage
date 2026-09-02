@@ -29,12 +29,67 @@ public enum EmbedMode : Swift.String, Swift.Sendable {
     get
   }
 }
+public enum EmbedNavigationControlsPlacement : Swift.String, Swift.Sendable, Swift.CaseIterable {
+  case topRight
+  case bottomRight
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [DoorstepDropoffSDK.EmbedNavigationControlsPlacement]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [DoorstepDropoffSDK.EmbedNavigationControlsPlacement] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
 @_Concurrency.MainActor @preconcurrency public struct DoorstepEmbedView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(address: Swift.String, deliveryID: Swift.String? = nil, linkAPI: Swift.String = "https://api.core.doorstep.ai", mode: SwiftUICore.Binding<DoorstepDropoffSDK.EmbedMode>? = nil, inlineHeight: CoreFoundation.CGFloat = 300, expandedHeight: CoreFoundation.CGFloat = 600, baseMap: Swift.String = "light", parkingText: Swift.String = "95% of drivers parked here", markerColor: Swift.String = "#027FB8", polygonColor: Swift.String = "#3291BC", parkingColor: Swift.String = "#FF847B", onModeChanged: ((DoorstepDropoffSDK.EmbedMode) -> Swift.Void)? = nil, onError: ((Swift.String) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public init(address: Swift.String, deliveryID: Swift.String? = nil, linkAPI: Swift.String = "https://api.core.doorstep.ai", mode: SwiftUICore.Binding<DoorstepDropoffSDK.EmbedMode>? = nil, inlineHeight: CoreFoundation.CGFloat = 300, expandedHeight: CoreFoundation.CGFloat = 600, baseMap: Swift.String = "light", parkingText: Swift.String = "95% of drivers parked here", markerColor: Swift.String = "#027FB8", polygonColor: Swift.String = "#3291BC", parkingColor: Swift.String = "#FF847B", endpoint: DoorstepDropoffSDK.LatLngObject? = nil, mapStyleToggle: Swift.Bool = true, gpsRecenterToggle: Swift.Bool = true, streetViewToggle: Swift.Bool = true, expandContractToggle: Swift.Bool = true, navigationControlsPlacement: DoorstepDropoffSDK.EmbedNavigationControlsPlacement = .topRight, readyTimeoutSeconds: Foundation.TimeInterval = 15, onModeChanged: ((DoorstepDropoffSDK.EmbedMode) -> Swift.Void)? = nil, onLoading: (() -> Swift.Void)? = nil, onSuccess: (() -> Swift.Void)? = nil, onError: ((DoorstepDropoffSDK.DoorstepEmbedError) -> Swift.Void)? = nil)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s18DoorstepDropoffSDK0A9EmbedViewV4bodyQrvp", 0) __
+}
+public struct DoorstepEmbedError : Swift.Error {
+  public enum Stage : Swift.String, Swift.Sendable {
+    case linkGeneration
+    case webNavigation
+    case initialization
+    case rendering
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum Code : Swift.String, Swift.Sendable {
+    case invalidConfiguration
+    case linkGenerationFailed
+    case networkUnavailable
+    case httpError
+    case navigationFailed
+    case initializationFailed
+    case webViewProcessTerminated
+    case initializationTimeout
+    case unknown
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public let code: DoorstepDropoffSDK.DoorstepEmbedError.Code
+  public let stage: DoorstepDropoffSDK.DoorstepEmbedError.Stage
+  public let message: Swift.String
+  public let isRetryable: Swift.Bool
+  public let httpStatusCode: Swift.Int?
+  public let requestID: Swift.String?
+  public let underlyingError: (any Swift.Error)?
+  public init(code: DoorstepDropoffSDK.DoorstepEmbedError.Code, stage: DoorstepDropoffSDK.DoorstepEmbedError.Stage, message: Swift.String, isRetryable: Swift.Bool, httpStatusCode: Swift.Int? = nil, requestID: Swift.String? = nil, underlyingError: (any Swift.Error)? = nil)
+}
+extension DoorstepDropoffSDK.DoorstepEmbedError : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
 }
 public enum SDKLogLevel : Swift.Int, Swift.Codable, Swift.Comparable {
   case debug
@@ -267,7 +322,16 @@ public var bleScanningEnabled: Swift.Bool {
 extension DoorstepDropoffSDK.EmbedMode : Swift.Equatable {}
 extension DoorstepDropoffSDK.EmbedMode : Swift.Hashable {}
 extension DoorstepDropoffSDK.EmbedMode : Swift.RawRepresentable {}
+extension DoorstepDropoffSDK.EmbedNavigationControlsPlacement : Swift.Equatable {}
+extension DoorstepDropoffSDK.EmbedNavigationControlsPlacement : Swift.Hashable {}
+extension DoorstepDropoffSDK.EmbedNavigationControlsPlacement : Swift.RawRepresentable {}
 extension DoorstepDropoffSDK.DoorstepEmbedView : Swift.Sendable {}
+extension DoorstepDropoffSDK.DoorstepEmbedError.Stage : Swift.Equatable {}
+extension DoorstepDropoffSDK.DoorstepEmbedError.Stage : Swift.Hashable {}
+extension DoorstepDropoffSDK.DoorstepEmbedError.Stage : Swift.RawRepresentable {}
+extension DoorstepDropoffSDK.DoorstepEmbedError.Code : Swift.Equatable {}
+extension DoorstepDropoffSDK.DoorstepEmbedError.Code : Swift.Hashable {}
+extension DoorstepDropoffSDK.DoorstepEmbedError.Code : Swift.RawRepresentable {}
 extension DoorstepDropoffSDK.SDKLogLevel : Swift.Hashable {}
 extension DoorstepDropoffSDK.SDKLogLevel : Swift.RawRepresentable {}
 extension DoorstepDropoffSDK.DropoffType : Swift.Equatable {}
