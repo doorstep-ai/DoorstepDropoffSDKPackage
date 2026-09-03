@@ -29,21 +29,8 @@ public enum EmbedMode : Swift.String, Swift.Sendable {
     get
   }
 }
-public enum EmbedNavigationControlsPlacement : Swift.String, Swift.Sendable, Swift.CaseIterable {
-  case topRight
-  case bottomRight
-  public init?(rawValue: Swift.String)
-  public typealias AllCases = [DoorstepDropoffSDK.EmbedNavigationControlsPlacement]
-  public typealias RawValue = Swift.String
-  nonisolated public static var allCases: [DoorstepDropoffSDK.EmbedNavigationControlsPlacement] {
-    get
-  }
-  public var rawValue: Swift.String {
-    get
-  }
-}
 @_Concurrency.MainActor @preconcurrency public struct DoorstepEmbedView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(address: Swift.String, deliveryID: Swift.String? = nil, linkAPI: Swift.String = "https://api.core.doorstep.ai", mode: SwiftUICore.Binding<DoorstepDropoffSDK.EmbedMode>? = nil, inlineHeight: CoreFoundation.CGFloat = 300, expandedHeight: CoreFoundation.CGFloat = 600, baseMap: Swift.String = "light", parkingText: Swift.String = "95% of drivers parked here", markerColor: Swift.String = "#027FB8", polygonColor: Swift.String = "#3291BC", parkingColor: Swift.String = "#FF847B", endpoint: DoorstepDropoffSDK.LatLngObject? = nil, mapStyleToggle: Swift.Bool = true, gpsRecenterToggle: Swift.Bool = true, streetViewToggle: Swift.Bool = true, expandContractToggle: Swift.Bool = true, navigationControlsPlacement: DoorstepDropoffSDK.EmbedNavigationControlsPlacement = .topRight, readyTimeoutSeconds: Foundation.TimeInterval = 15, onModeChanged: ((DoorstepDropoffSDK.EmbedMode) -> Swift.Void)? = nil, onLoading: (() -> Swift.Void)? = nil, onSuccess: (() -> Swift.Void)? = nil, onError: ((DoorstepDropoffSDK.DoorstepEmbedError) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public init(address: Swift.String, deliveryID: Swift.String? = nil, linkAPI: Swift.String = "https://api.core.doorstep.ai", mode: SwiftUICore.Binding<DoorstepDropoffSDK.EmbedMode>? = nil, inlineHeight: CoreFoundation.CGFloat = 300, expandedHeight: CoreFoundation.CGFloat = 600, baseMap: Swift.String = "light", parkingText: Swift.String = "95% of drivers parked here", markerColor: Swift.String = "#027FB8", polygonColor: Swift.String = "#3291BC", parkingColor: Swift.String = "#FF847B", endpoint: DoorstepDropoffSDK.LatLngObject? = nil, mapStyleToggle: Swift.Bool = true, gpsRecenterToggle: Swift.Bool = true, streetViewToggle: Swift.Bool = true, expandContractToggle: Swift.Bool = true, fitGpsOnStart: Swift.Bool = false, readyTimeoutSeconds: Foundation.TimeInterval = 15, onModeChanged: ((DoorstepDropoffSDK.EmbedMode) -> Swift.Void)? = nil, onLoading: (() -> Swift.Void)? = nil, onSuccess: (() -> Swift.Void)? = nil, onError: ((DoorstepDropoffSDK.DoorstepEmbedError) -> Swift.Void)? = nil)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
@@ -322,9 +309,6 @@ public var bleScanningEnabled: Swift.Bool {
 extension DoorstepDropoffSDK.EmbedMode : Swift.Equatable {}
 extension DoorstepDropoffSDK.EmbedMode : Swift.Hashable {}
 extension DoorstepDropoffSDK.EmbedMode : Swift.RawRepresentable {}
-extension DoorstepDropoffSDK.EmbedNavigationControlsPlacement : Swift.Equatable {}
-extension DoorstepDropoffSDK.EmbedNavigationControlsPlacement : Swift.Hashable {}
-extension DoorstepDropoffSDK.EmbedNavigationControlsPlacement : Swift.RawRepresentable {}
 extension DoorstepDropoffSDK.DoorstepEmbedView : Swift.Sendable {}
 extension DoorstepDropoffSDK.DoorstepEmbedError.Stage : Swift.Equatable {}
 extension DoorstepDropoffSDK.DoorstepEmbedError.Stage : Swift.Hashable {}

@@ -268,331 +268,13 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "EmbedNavigationControlsPlacement",
-        "printedName": "EmbedNavigationControlsPlacement",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "topRight",
-            "printedName": "topRight",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(DoorstepDropoffSDK.EmbedNavigationControlsPlacement.Type) -> DoorstepDropoffSDK.EmbedNavigationControlsPlacement",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "EmbedNavigationControlsPlacement",
-                    "printedName": "DoorstepDropoffSDK.EmbedNavigationControlsPlacement",
-                    "usr": "s:18DoorstepDropoffSDK32EmbedNavigationControlsPlacementO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "DoorstepDropoffSDK.EmbedNavigationControlsPlacement.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "EmbedNavigationControlsPlacement",
-                        "printedName": "DoorstepDropoffSDK.EmbedNavigationControlsPlacement",
-                        "usr": "s:18DoorstepDropoffSDK32EmbedNavigationControlsPlacementO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:18DoorstepDropoffSDK32EmbedNavigationControlsPlacementO8topRightyA2CmF",
-            "mangledName": "$s18DoorstepDropoffSDK32EmbedNavigationControlsPlacementO8topRightyA2CmF",
-            "moduleName": "DoorstepDropoffSDK"
-          },
-          {
-            "kind": "Var",
-            "name": "bottomRight",
-            "printedName": "bottomRight",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(DoorstepDropoffSDK.EmbedNavigationControlsPlacement.Type) -> DoorstepDropoffSDK.EmbedNavigationControlsPlacement",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "EmbedNavigationControlsPlacement",
-                    "printedName": "DoorstepDropoffSDK.EmbedNavigationControlsPlacement",
-                    "usr": "s:18DoorstepDropoffSDK32EmbedNavigationControlsPlacementO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "DoorstepDropoffSDK.EmbedNavigationControlsPlacement.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "EmbedNavigationControlsPlacement",
-                        "printedName": "DoorstepDropoffSDK.EmbedNavigationControlsPlacement",
-                        "usr": "s:18DoorstepDropoffSDK32EmbedNavigationControlsPlacementO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:18DoorstepDropoffSDK32EmbedNavigationControlsPlacementO11bottomRightyA2CmF",
-            "mangledName": "$s18DoorstepDropoffSDK32EmbedNavigationControlsPlacementO11bottomRightyA2CmF",
-            "moduleName": "DoorstepDropoffSDK"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "DoorstepDropoffSDK.EmbedNavigationControlsPlacement?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "EmbedNavigationControlsPlacement",
-                    "printedName": "DoorstepDropoffSDK.EmbedNavigationControlsPlacement",
-                    "usr": "s:18DoorstepDropoffSDK32EmbedNavigationControlsPlacementO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:18DoorstepDropoffSDK32EmbedNavigationControlsPlacementO8rawValueACSgSS_tcfc",
-            "mangledName": "$s18DoorstepDropoffSDK32EmbedNavigationControlsPlacementO8rawValueACSgSS_tcfc",
-            "moduleName": "DoorstepDropoffSDK",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:18DoorstepDropoffSDK32EmbedNavigationControlsPlacementO8rawValueSSvp",
-            "mangledName": "$s18DoorstepDropoffSDK32EmbedNavigationControlsPlacementO8rawValueSSvp",
-            "moduleName": "DoorstepDropoffSDK",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18DoorstepDropoffSDK32EmbedNavigationControlsPlacementO8rawValueSSvg",
-                "mangledName": "$s18DoorstepDropoffSDK32EmbedNavigationControlsPlacementO8rawValueSSvg",
-                "moduleName": "DoorstepDropoffSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "allCases",
-            "printedName": "allCases",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[DoorstepDropoffSDK.EmbedNavigationControlsPlacement]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "EmbedNavigationControlsPlacement",
-                    "printedName": "DoorstepDropoffSDK.EmbedNavigationControlsPlacement",
-                    "usr": "s:18DoorstepDropoffSDK32EmbedNavigationControlsPlacementO"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:18DoorstepDropoffSDK32EmbedNavigationControlsPlacementO8allCasesSayACGvpZ",
-            "mangledName": "$s18DoorstepDropoffSDK32EmbedNavigationControlsPlacementO8allCasesSayACGvpZ",
-            "moduleName": "DoorstepDropoffSDK",
-            "static": true,
-            "implicit": true,
-            "declAttributes": [
-              "Nonisolated"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[DoorstepDropoffSDK.EmbedNavigationControlsPlacement]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "EmbedNavigationControlsPlacement",
-                        "printedName": "DoorstepDropoffSDK.EmbedNavigationControlsPlacement",
-                        "usr": "s:18DoorstepDropoffSDK32EmbedNavigationControlsPlacementO"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18DoorstepDropoffSDK32EmbedNavigationControlsPlacementO8allCasesSayACGvgZ",
-                "mangledName": "$s18DoorstepDropoffSDK32EmbedNavigationControlsPlacementO8allCasesSayACGvgZ",
-                "moduleName": "DoorstepDropoffSDK",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:18DoorstepDropoffSDK32EmbedNavigationControlsPlacementO",
-        "mangledName": "$s18DoorstepDropoffSDK32EmbedNavigationControlsPlacementO",
-        "moduleName": "DoorstepDropoffSDK",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "enumRawTypeName": "String",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CaseIterable",
-            "printedName": "CaseIterable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "AllCases",
-                "printedName": "AllCases",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[DoorstepDropoffSDK.EmbedNavigationControlsPlacement]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "EmbedNavigationControlsPlacement",
-                        "printedName": "DoorstepDropoffSDK.EmbedNavigationControlsPlacement",
-                        "usr": "s:18DoorstepDropoffSDK32EmbedNavigationControlsPlacementO"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s12CaseIterableP",
-            "mangledName": "$ss12CaseIterableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "DoorstepEmbedView",
         "printedName": "DoorstepEmbedView",
         "children": [
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(address:deliveryID:linkAPI:mode:inlineHeight:expandedHeight:baseMap:parkingText:markerColor:polygonColor:parkingColor:endpoint:mapStyleToggle:gpsRecenterToggle:streetViewToggle:expandContractToggle:navigationControlsPlacement:readyTimeoutSeconds:onModeChanged:onLoading:onSuccess:onError:)",
+            "printedName": "init(address:deliveryID:linkAPI:mode:inlineHeight:expandedHeight:baseMap:parkingText:markerColor:polygonColor:parkingColor:endpoint:mapStyleToggle:gpsRecenterToggle:streetViewToggle:expandContractToggle:fitGpsOnStart:readyTimeoutSeconds:onModeChanged:onLoading:onSuccess:onError:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -745,10 +427,10 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "EmbedNavigationControlsPlacement",
-                "printedName": "DoorstepDropoffSDK.EmbedNavigationControlsPlacement",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
                 "hasDefaultArg": true,
-                "usr": "s:18DoorstepDropoffSDK32EmbedNavigationControlsPlacementO"
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
@@ -865,8 +547,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:18DoorstepDropoffSDK0A9EmbedViewV7address10deliveryID7linkAPI4mode12inlineHeight08expandedM07baseMap11parkingText11markerColor07polygonT00qT08endpoint14mapStyleToggle011gpsRecenterY006streeteY0014expandContractY027navigationControlsPlacement19readyTimeoutSeconds13onModeChanged9onLoading9onSuccess7onErrorACSS_SSSgSS7SwiftUI7BindingVyAA0D4ModeOGSg14CoreFoundation7CGFloatVA8_S5SAA12LatLngObjectVSgS4bAA0D27NavigationControlsPlacementOSdyA3_cSgyycSgA15_yAA0aD5ErrorVcSgtcfc",
-            "mangledName": "$s18DoorstepDropoffSDK0A9EmbedViewV7address10deliveryID7linkAPI4mode12inlineHeight08expandedM07baseMap11parkingText11markerColor07polygonT00qT08endpoint14mapStyleToggle011gpsRecenterY006streeteY0014expandContractY027navigationControlsPlacement19readyTimeoutSeconds13onModeChanged9onLoading9onSuccess7onErrorACSS_SSSgSS7SwiftUI7BindingVyAA0D4ModeOGSg12CoreGraphics7CGFloatVA8_S5SAA12LatLngObjectVSgS4bAA0D27NavigationControlsPlacementOSdyA3_cSgyycSgA15_yAA0aD5ErrorVcSgtcfc",
+            "usr": "s:18DoorstepDropoffSDK0A9EmbedViewV7address10deliveryID7linkAPI4mode12inlineHeight08expandedM07baseMap11parkingText11markerColor07polygonT00qT08endpoint14mapStyleToggle011gpsRecenterY006streeteY0014expandContractY013fitGpsOnStart19readyTimeoutSeconds13onModeChanged9onLoading9onSuccess7onErrorACSS_SSSgSS7SwiftUI7BindingVyAA0D4ModeOGSg14CoreFoundation7CGFloatVA8_S5SAA12LatLngObjectVSgS5bSdyA3_cSgyycSgA13_yAA0aD5ErrorVcSgtcfc",
+            "mangledName": "$s18DoorstepDropoffSDK0A9EmbedViewV7address10deliveryID7linkAPI4mode12inlineHeight08expandedM07baseMap11parkingText11markerColor07polygonT00qT08endpoint14mapStyleToggle011gpsRecenterY006streeteY0014expandContractY013fitGpsOnStart19readyTimeoutSeconds13onModeChanged9onLoading9onSuccess7onErrorACSS_SSSgSS7SwiftUI7BindingVyAA0D4ModeOGSg12CoreGraphics7CGFloatVA8_S5SAA12LatLngObjectVSgS5bSdyA3_cSgyycSgA13_yAA0aD5ErrorVcSgtcfc",
             "moduleName": "DoorstepDropoffSDK",
             "declAttributes": [
               "Preconcurrency",
@@ -11527,504 +11209,504 @@
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 3419,
+      "offset": 3140,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 3429,
+      "offset": 3150,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 3438,
+      "offset": 3159,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 3450,
+      "offset": 3171,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 3488,
+      "offset": 3209,
       "length": 2,
       "value": "45"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 3493,
+      "offset": 3214,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 3505,
+      "offset": 3226,
       "length": 2,
       "value": "41"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 3510,
+      "offset": 3231,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 3521,
+      "offset": 3242,
       "length": 2,
       "value": "41"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 3526,
+      "offset": 3247,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "FloatLiteral",
-      "offset": 3540,
+      "offset": 3261,
       "length": 4,
       "value": "0.18"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 3579,
+      "offset": 3300,
       "length": 4,
       "value": "0x3B"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 3586,
+      "offset": 3307,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 3598,
+      "offset": 3319,
       "length": 4,
       "value": "0x44"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 3605,
+      "offset": 3326,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 3616,
+      "offset": 3337,
       "length": 4,
       "value": "0x59"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 3623,
+      "offset": 3344,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 3637,
+      "offset": 3358,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 3723,
+      "offset": 3444,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 3733,
+      "offset": 3454,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 3742,
+      "offset": 3463,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "FloatLiteral",
-      "offset": 3754,
+      "offset": 3475,
       "length": 4,
       "value": "0.40"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 3795,
+      "offset": 3516,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 3805,
+      "offset": 3526,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 3814,
+      "offset": 3535,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "FloatLiteral",
-      "offset": 3826,
+      "offset": 3547,
       "length": 4,
       "value": "0.20"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 8208,
+      "offset": 7929,
       "length": 11,
       "value": "\"dsgoState\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 8349,
+      "offset": 8070,
       "length": 15,
       "value": "\"dsgoLifecycle\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 8574,
+      "offset": 8295,
       "length": 14,
       "value": "\"_dsgoAttempt\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "BooleanLiteral",
-      "offset": 9504,
+      "offset": 9225,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "BooleanLiteral",
-      "offset": 9553,
+      "offset": 9274,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "BooleanLiteral",
-      "offset": 9897,
+      "offset": 9618,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "BooleanLiteral",
-      "offset": 10015,
+      "offset": 9736,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 10071,
+      "offset": 9784,
+      "length": 8,
+      "value": "\"closed\""
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "StringLiteral",
+      "offset": 9843,
       "length": 7,
       "value": "\"light\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 10973,
+      "offset": 10745,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "BooleanLiteral",
-      "offset": 11254,
+      "offset": 11026,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "BooleanLiteral",
-      "offset": 11494,
+      "offset": 11266,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "BooleanLiteral",
-      "offset": 11621,
+      "offset": 11393,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 11679,
+      "offset": 11451,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "Array",
-      "offset": 30749,
+      "offset": 30734,
       "length": 30,
       "value": "[\"light\", \"dark\", \"satellite\"]"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 33988,
+      "offset": 33973,
       "length": 2245,
       "value": "\"(() => {\n  if (window.dsgo && typeof window.dsgo.recenter === 'function') {\n    window.dsgo.recenter()\n    return 'api'\n  }\n\n  const clickableAncestor = (node) => node?.closest(\n    'button, [role=\"button\"], [data-dsgo-control=\"recenter\"], [class*=\"cursor-pointer\"]'\n  )\n\n  let control = document.querySelector('[data-dsgo-control=\"recenter\"]')\n    || document.querySelector('[aria-label=\"recenter map\" i]')\n    || clickableAncestor(document.querySelector('svg.lucide-focus'))\n\n  if (!control) {\n    const standardGlyph = Array.from(document.querySelectorAll('svg[viewBox=\"0 0 24 24\"]'))\n      .find((svg) => {\n        const paths = Array.from(svg.querySelectorAll('path'))\n        const pathData = paths.map((path) => path.getAttribute('d') || '')\n        return paths.length === 5\n          && pathData.some((d) => d.startsWith('M12 3'))\n          && pathData.some((d) => d.startsWith('M3.00781 12'))\n          && pathData.some((d) => d.startsWith('M19.0156 12'))\n      })\n    control = clickableAncestor(standardGlyph)\n  }\n\n  \/\/ Deployed Doorstep Go versions have shipped more than one focus glyph.\n  \/\/ The control's layout contract is steadier than its SVG: it is the only\n  \/\/ clickable, fixed, circular SVG control anchored to the viewport bottom.\n  if (!control) {\n    control = Array.from(document.querySelectorAll('[class*=\"cursor-pointer\"]'))\n      .find((element) => {\n        const style = getComputedStyle(element)\n        return style.position === 'fixed'\n          && element.style.bottom !== ''\n          && style.borderRadius !== '0px'\n          && style.pointerEvents !== 'none'\n          && element.querySelector('svg')\n      })\n  }\n\n  if (!control) {\n    const dropoffGlyph = Array.from(document.querySelectorAll('svg[viewBox=\"0 0 50 50\"]'))\n      .find((svg) => svg.querySelectorAll('circle').length === 2\n        && svg.querySelectorAll('path').length >= 4)\n    control = clickableAncestor(dropoffGlyph)\n  }\n\n  if (!control || typeof control.click !== 'function') return 'missing'\n  control.click()\n  return 'control'\n})()\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 37117,
+      "offset": 37102,
       "length": 959,
       "value": "\"(function () {\n  const read = () => {\n    const s = getComputedStyle(document.documentElement)\n    return {\n      bg:     s.getPropertyValue('--th-button-bg').trim(),\n      border: s.getPropertyValue('--th-button-border').trim(),\n      icon:   s.getPropertyValue('--th-icon').trim(),\n      sv:     document.documentElement.dataset.sv || 'closed',\n    }\n  }\n  let last = ''\n  const post = () => {\n    const t = read()\n    if (!t.bg) return\n    const key = [t.bg, t.border, t.icon, t.sv].join('|')\n    if (key === last) return\n    last = key\n    window.webkit?.messageHandlers?.dsgoState?.postMessage(t)\n  }\n  new MutationObserver(post).observe(document.documentElement, {\n    attributes: true, attributeFilter: ['style', 'data-sv'],\n  })\n  let n = 0\n  const id = setInterval(() => { post(); if (++n > 40) clearInterval(id) }, 100)\n  post()\n})()\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 38474,
+      "offset": 38459,
       "length": 65,
       "value": "\"Doorstep Go: dropped lifecycle message without an attempt token\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 39184,
+      "offset": 39169,
       "length": 61,
       "value": "\"Doorstep Go: dropped state message without an attempt token\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 48430,
+      "offset": 48337,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 48706,
+      "offset": 48613,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 48776,
+      "offset": 48683,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "FloatLiteral",
-      "offset": 48846,
+      "offset": 48753,
       "length": 3,
       "value": "8.5"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 48921,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
-      "kind": "IntegerLiteral",
-      "offset": 49005,
-      "length": 3,
-      "value": "160"
-    },
-    {
-      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
-      "kind": "IntegerLiteral",
-      "offset": 49077,
+      "offset": 48825,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 49147,
+      "offset": 48895,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 50603,
+      "offset": 50297,
       "length": 30,
       "value": "\"https:\/\/api.core.doorstep.ai\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 50724,
+      "offset": 50418,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 50771,
+      "offset": 50465,
       "length": 3,
       "value": "600"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 50810,
+      "offset": 50504,
       "length": 7,
       "value": "\"light\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 50857,
+      "offset": 50551,
       "length": 28,
       "value": "\"95% of drivers parked here\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 50925,
+      "offset": 50619,
       "length": 9,
       "value": "\"#027FB8\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 50975,
+      "offset": 50669,
       "length": 9,
       "value": "\"#3291BC\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 51025,
+      "offset": 50719,
       "length": 9,
       "value": "\"#FF847B\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "BooleanLiteral",
-      "offset": 51122,
+      "offset": 50816,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "BooleanLiteral",
-      "offset": 51170,
+      "offset": 50864,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "BooleanLiteral",
-      "offset": 51217,
+      "offset": 50911,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "BooleanLiteral",
-      "offset": 51268,
+      "offset": 50962,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
+      "kind": "BooleanLiteral",
+      "offset": 51006,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 51417,
+      "offset": 51065,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "FloatLiteral",
-      "offset": 56889,
+      "offset": 56636,
       "length": 5,
       "value": "41.48"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "FloatLiteral",
-      "offset": 56945,
+      "offset": 56692,
       "length": 5,
       "value": "24.89"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "FloatLiteral",
-      "offset": 57030,
+      "offset": 56777,
       "length": 5,
       "value": "2.074"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 57038,
+      "offset": 56785,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 57101,
+      "offset": 56848,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "FloatLiteral",
-      "offset": 57151,
+      "offset": 56898,
       "length": 5,
       "value": "24.89"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 57209,
+      "offset": 56956,
       "length": 2,
       "value": "21"
     },
@@ -12054,7 +11736,7 @@
       "kind": "StringLiteral",
       "offset": 416,
       "length": 9,
-      "value": "\"2356b0e\""
+      "value": "\"932cfe0\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DiagnosticsLedger.swift",
@@ -14847,7 +14529,7 @@
       "kind": "StringLiteral",
       "offset": 543,
       "length": 7,
-      "value": "\"2.2.4\""
+      "value": "\"2.2.5\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DataManager.swift",
