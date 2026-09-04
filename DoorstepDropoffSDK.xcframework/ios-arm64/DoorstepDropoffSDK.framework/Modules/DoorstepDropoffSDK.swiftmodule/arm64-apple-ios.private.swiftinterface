@@ -78,6 +78,18 @@ extension DoorstepDropoffSDK.DoorstepEmbedError : Swift.CustomStringConvertible 
     get
   }
 }
+public struct RouteTrackingOptions : Swift.Codable, Swift.Sendable, Swift.Equatable {
+  public var enabled: Swift.Bool
+  public var clientRouteId: Swift.String?
+  public var driverId: Swift.String?
+  public var metadata: [Swift.String : Swift.String]?
+  public init(clientRouteId: Swift.String? = nil, driverId: Swift.String? = nil, metadata: [Swift.String : Swift.String]? = nil)
+  @available(*, deprecated, message: "The enabled value is ignored; use server routeTracking.enabled.")
+  public init(enabled: Swift.Bool, clientRouteId: Swift.String? = nil, driverId: Swift.String? = nil, metadata: [Swift.String : Swift.String]? = nil)
+  public static func == (a: DoorstepDropoffSDK.RouteTrackingOptions, b: DoorstepDropoffSDK.RouteTrackingOptions) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public enum SDKLogLevel : Swift.Int, Swift.Codable, Swift.Comparable {
   case debug
   case info
@@ -173,6 +185,7 @@ public enum DoorstepAIError : Swift.Error {
   case sessionCreationFailed(Swift.String)
   case invalidAddress
   case unknownDeliveryId(Swift.String)
+  case invalidMetadata
 }
 public enum DropoffType : Swift.String, Swift.Codable {
   case pod
@@ -189,7 +202,9 @@ public enum DropoffType : Swift.String, Swift.Codable {
   public static let geofenceSessionStartedNotification: Foundation.Notification.Name
   public static let geofenceSessionStoppedNotification: Foundation.Notification.Name
   public static let sessionServerIdAssignedNotification: Foundation.Notification.Name
-  public static func setApiKey(key: Swift.String, initCollectors: Swift.Bool = true, shouldGetConfig: Swift.Bool = true)
+  public static func setApiKey(key: Swift.String, shouldGetConfig: Swift.Bool = true)
+  @available(*, deprecated, message: "Omit initCollectors; use setApiKey(key:shouldGetConfig:).")
+  public static func setApiKey(key: Swift.String, initCollectors: Swift.Bool, shouldGetConfig: Swift.Bool = true)
   public static func setDoorstepGoApiKey(key: Swift.String)
   public static func setBackgroundSessionCompletionHandler(_ handler: @escaping () -> Swift.Void)
   public static func setBackgroundSessionCompletionHandler(_ handler: @escaping () -> Swift.Void, forSessionIdentifier identifier: Swift.String)
@@ -210,12 +225,24 @@ public enum DropoffType : Swift.String, Swift.Codable {
   public static func startDeliveryByLatLng(latitude: Swift.Double, longitude: Swift.Double, subUnit: Swift.String, deliveryId: Swift.String, customerId: Swift.String? = nil, driverId: Swift.String? = nil, timeoutSeconds: Foundation.TimeInterval? = nil, autoStopAfterDropoffSeconds: Foundation.TimeInterval? = nil) async throws
   public static func markDropoff(deliveryId: Swift.String, dropoffType: DoorstepDropoffSDK.DropoffType) async throws
   public static func newEvent(eventName: Swift.String, deliveryId: Swift.String, timestamp: Swift.Double? = nil) async throws
+  public static func addMetadata(_ deliveryId: Swift.String, _ metadata: [Swift.String : Any]) async throws
   public static func stopDelivery(deliveryId: Swift.String) async
-  public static func startRouteGeofencing(stops: [DoorstepDropoffSDK.DeliveryStop], options: DoorstepDropoffSDK.RouteGeofenceOptions = RouteGeofenceOptions())
+  public static func startRouteGeofencing(stops: [DoorstepDropoffSDK.DeliveryStop], options: DoorstepDropoffSDK.RouteOptions = RouteOptions())
+  @available(*, deprecated, message: "Use startRouteGeofencing(stops:options:) with RouteOptions.")
+  public static func startRouteGeofencing(stops: [DoorstepDropoffSDK.DeliveryStop], options: DoorstepDropoffSDK.RouteGeofenceOptions)
+  @available(*, deprecated, message: "Use one RouteOptions argument instead of RouteGeofenceOptions plus RouteTrackingOptions.")
+  public static func startRouteGeofencing(stops: [DoorstepDropoffSDK.DeliveryStop], options: DoorstepDropoffSDK.RouteGeofenceOptions = RouteGeofenceOptions(), routeTracking: DoorstepDropoffSDK.RouteTrackingOptions)
   public static func updateRouteStops(_ stops: [DoorstepDropoffSDK.DeliveryStop])
   public static func stopRouteGeofencing()
+  public static func isRouteGeofencingActive() -> Swift.Bool
   public static func resumeRouteGeofencingIfNeeded()
   public static var monitoredStops: [DoorstepDropoffSDK.DeliveryStop] {
+    get
+  }
+  public static var activeRouteId: Swift.String? {
+    get
+  }
+  public static var activeRouteRevision: Swift.Int? {
     get
   }
   @objc deinit
@@ -269,19 +296,35 @@ public struct DoorstepPermissionRequestResult : Swift.Sendable {
   }
 }
 public struct DeliveryStop : Swift.Codable, Swift.Sendable, Swift.Equatable {
+  public let routeStopId: Swift.String?
   public let deliveryId: Swift.String
   public let address: Swift.String
   public let latitude: Swift.Double
   public let longitude: Swift.Double
+  @available(*, deprecated, message: "Ignored; radius is controlled by server config misc.geofence.defaultRadiusMeters.")
   public let radiusMeters: Swift.Double?
   public let customerId: Swift.String?
   public let driverId: Swift.String?
-  public init(deliveryId: Swift.String, address: Swift.String, latitude: Swift.Double, longitude: Swift.Double, radiusMeters: Swift.Double? = nil, customerId: Swift.String? = nil, driverId: Swift.String? = nil)
+  public init(routeStopId: Swift.String? = nil, deliveryId: Swift.String, address: Swift.String, latitude: Swift.Double, longitude: Swift.Double, radiusMeters: Swift.Double? = nil, customerId: Swift.String? = nil, driverId: Swift.String? = nil)
   public static func == (a: DoorstepDropoffSDK.DeliveryStop, b: DoorstepDropoffSDK.DeliveryStop) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct RouteOptions : Swift.Codable, Swift.Sendable, Swift.Equatable {
+  @available(*, deprecated, message: "Ignored; radius is controlled by server config misc.geofence.defaultRadiusMeters.")
+  public var defaultRadiusMeters: Swift.Double
+  public var timeoutSeconds: Foundation.TimeInterval?
+  public var autoStopAfterDropoffSeconds: Foundation.TimeInterval?
+  public var clientRouteId: Swift.String?
+  public var driverId: Swift.String?
+  public var metadata: [Swift.String : Swift.String]?
+  public init(defaultRadiusMeters: Swift.Double = 250, timeoutSeconds: Foundation.TimeInterval? = nil, autoStopAfterDropoffSeconds: Foundation.TimeInterval? = nil, clientRouteId: Swift.String? = nil, driverId: Swift.String? = nil, metadata: [Swift.String : Swift.String]? = nil)
+  public static func == (a: DoorstepDropoffSDK.RouteOptions, b: DoorstepDropoffSDK.RouteOptions) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct RouteGeofenceOptions : Swift.Codable, Swift.Sendable, Swift.Equatable {
+  @available(*, deprecated, message: "Ignored; radius is controlled by server config misc.geofence.defaultRadiusMeters.")
   public var defaultRadiusMeters: Swift.Double
   public var timeoutSeconds: Foundation.TimeInterval?
   public var autoStopAfterDropoffSeconds: Foundation.TimeInterval?
