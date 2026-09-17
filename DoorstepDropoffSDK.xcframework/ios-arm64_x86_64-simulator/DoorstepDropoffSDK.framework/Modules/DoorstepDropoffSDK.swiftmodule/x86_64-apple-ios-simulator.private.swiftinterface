@@ -197,7 +197,25 @@ public enum DropoffType : Swift.String, Swift.Codable {
   }
 }
 @_hasMissingDesignatedInitializers public class DoorstepAI {
+  public static var collectDebugLogs: Swift.Bool {
+    get
+    set
+  }
+  public static var isCollectingDebugLogs: Swift.Bool {
+    get
+  }
+  public static var isDevModeEnabled: Swift.Bool {
+    get
+  }
+  public static var debugLogCollectionError: Swift.String? {
+    get
+  }
+  public static let debugLogCollectionDidChangeNotification: Foundation.Notification.Name
+  public static func exportDebugLogs() async throws -> Foundation.URL
   public static let configDidLoadNotification: Foundation.Notification.Name
+  public static var collectionStartedAt: Foundation.Date? {
+    get
+  }
   public static let configDidFailToLoadNotification: Foundation.Notification.Name
   public static let geofenceSessionStartedNotification: Foundation.Notification.Name
   public static let geofenceSessionStoppedNotification: Foundation.Notification.Name
