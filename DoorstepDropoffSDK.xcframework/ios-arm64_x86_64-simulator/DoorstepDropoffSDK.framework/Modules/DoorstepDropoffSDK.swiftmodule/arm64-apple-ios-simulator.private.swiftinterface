@@ -234,13 +234,13 @@ public enum DropoffType : Swift.String, Swift.Codable {
   public static func configureRemoteLogging(enabled: Swift.Bool, minLevel: DoorstepDropoffSDK.SDKLogLevel = .warning, flushInterval: Foundation.TimeInterval = 30, batchSize: Swift.Int = 50, maxQueueSize: Swift.Int = 1000)
   public static func debugStateJson() -> Swift.String
   public static func enableDevMode(apiKey: Swift.String) async
-  public static func startDeliveryByPlaceID(placeID: Swift.String, deliveryId: Swift.String, customerId: Swift.String? = nil, driverId: Swift.String? = nil, timeoutSeconds: Foundation.TimeInterval? = nil, autoStopAfterDropoffSeconds: Foundation.TimeInterval? = nil) async throws
+  public static func startDeliveryByPlaceID(placeID: Swift.String, deliveryId: Swift.String, customerId: Swift.String? = nil, driverId: Swift.String? = nil, timeoutSeconds: Foundation.TimeInterval? = nil, autoStopAfterDropoffSeconds: Foundation.TimeInterval? = nil, metadata: [Swift.String : Any]? = nil) async throws
   @available(*, deprecated, message: "Use startDeliveryByAddressType(address:deliveryId:coordinates:timeoutSeconds:autoStopAfterDropoffSeconds:) or startDeliveryByAddressString(address:deliveryId:coordinates:timeoutSeconds:autoStopAfterDropoffSeconds:) instead.")
-  public static func startDeliveryByPlusCode(plusCode: Swift.String, deliveryId: Swift.String, customerId: Swift.String? = nil, driverId: Swift.String? = nil, timeoutSeconds: Foundation.TimeInterval? = nil, autoStopAfterDropoffSeconds: Foundation.TimeInterval? = nil) async throws
-  public static func startDeliveryByAddressType(address: DoorstepDropoffSDK.AddressType, deliveryId: Swift.String, customerId: Swift.String? = nil, driverId: Swift.String? = nil, coordinates: DoorstepDropoffSDK.LatLngObject? = nil, timeoutSeconds: Foundation.TimeInterval? = nil, autoStopAfterDropoffSeconds: Foundation.TimeInterval? = nil) async throws
-  public static func startDeliveryByAddressString(address: Swift.String, deliveryId: Swift.String, customerId: Swift.String? = nil, driverId: Swift.String? = nil, coordinates: DoorstepDropoffSDK.LatLngObject? = nil, timeoutSeconds: Foundation.TimeInterval? = nil, autoStopAfterDropoffSeconds: Foundation.TimeInterval? = nil) async throws
+  public static func startDeliveryByPlusCode(plusCode: Swift.String, deliveryId: Swift.String, customerId: Swift.String? = nil, driverId: Swift.String? = nil, timeoutSeconds: Foundation.TimeInterval? = nil, autoStopAfterDropoffSeconds: Foundation.TimeInterval? = nil, metadata: [Swift.String : Any]? = nil) async throws
+  public static func startDeliveryByAddressType(address: DoorstepDropoffSDK.AddressType, deliveryId: Swift.String, customerId: Swift.String? = nil, driverId: Swift.String? = nil, coordinates: DoorstepDropoffSDK.LatLngObject? = nil, timeoutSeconds: Foundation.TimeInterval? = nil, autoStopAfterDropoffSeconds: Foundation.TimeInterval? = nil, metadata: [Swift.String : Any]? = nil) async throws
+  public static func startDeliveryByAddressString(address: Swift.String, deliveryId: Swift.String, customerId: Swift.String? = nil, driverId: Swift.String? = nil, coordinates: DoorstepDropoffSDK.LatLngObject? = nil, timeoutSeconds: Foundation.TimeInterval? = nil, autoStopAfterDropoffSeconds: Foundation.TimeInterval? = nil, metadata: [Swift.String : Any]? = nil) async throws
   @available(*, deprecated, message: "Use startDeliveryByAddressType(address:deliveryId:coordinates:timeoutSeconds:autoStopAfterDropoffSeconds:) or startDeliveryByAddressString(address:deliveryId:coordinates:timeoutSeconds:autoStopAfterDropoffSeconds:) instead.")
-  public static func startDeliveryByLatLng(latitude: Swift.Double, longitude: Swift.Double, subUnit: Swift.String, deliveryId: Swift.String, customerId: Swift.String? = nil, driverId: Swift.String? = nil, timeoutSeconds: Foundation.TimeInterval? = nil, autoStopAfterDropoffSeconds: Foundation.TimeInterval? = nil) async throws
+  public static func startDeliveryByLatLng(latitude: Swift.Double, longitude: Swift.Double, subUnit: Swift.String, deliveryId: Swift.String, customerId: Swift.String? = nil, driverId: Swift.String? = nil, timeoutSeconds: Foundation.TimeInterval? = nil, autoStopAfterDropoffSeconds: Foundation.TimeInterval? = nil, metadata: [Swift.String : Any]? = nil) async throws
   public static func markDropoff(deliveryId: Swift.String, dropoffType: DoorstepDropoffSDK.DropoffType) async throws
   public static func newEvent(eventName: Swift.String, deliveryId: Swift.String, timestamp: Swift.Double? = nil) async throws
   public static func addMetadata(_ deliveryId: Swift.String, _ metadata: [Swift.String : Any]) async throws
@@ -323,7 +323,8 @@ public struct DeliveryStop : Swift.Codable, Swift.Sendable, Swift.Equatable {
   public let radiusMeters: Swift.Double?
   public let customerId: Swift.String?
   public let driverId: Swift.String?
-  public init(routeStopId: Swift.String? = nil, deliveryId: Swift.String, address: Swift.String, latitude: Swift.Double, longitude: Swift.Double, radiusMeters: Swift.Double? = nil, customerId: Swift.String? = nil, driverId: Swift.String? = nil)
+  public let metadata: [Swift.String : DoorstepDropoffSDK.JSONValue]?
+  public init(routeStopId: Swift.String? = nil, deliveryId: Swift.String, address: Swift.String, latitude: Swift.Double, longitude: Swift.Double, radiusMeters: Swift.Double? = nil, customerId: Swift.String? = nil, driverId: Swift.String? = nil, metadata: [Swift.String : DoorstepDropoffSDK.JSONValue]? = nil)
   public static func == (a: DoorstepDropoffSDK.DeliveryStop, b: DoorstepDropoffSDK.DeliveryStop) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -350,6 +351,30 @@ public struct RouteGeofenceOptions : Swift.Codable, Swift.Sendable, Swift.Equata
   public static func == (a: DoorstepDropoffSDK.RouteGeofenceOptions, b: DoorstepDropoffSDK.RouteGeofenceOptions) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+}
+indirect public enum JSONValue : Swift.Codable, Swift.Sendable, Swift.Equatable {
+  case string(Swift.String), integer(Swift.Int64), number(Swift.Double), bool(Swift.Bool), object([Swift.String : DoorstepDropoffSDK.JSONValue]), array([DoorstepDropoffSDK.JSONValue]), null
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (a: DoorstepDropoffSDK.JSONValue, b: DoorstepDropoffSDK.JSONValue) -> Swift.Bool
+}
+extension DoorstepDropoffSDK.JSONValue : Swift.ExpressibleByStringLiteral, Swift.ExpressibleByIntegerLiteral, Swift.ExpressibleByFloatLiteral, Swift.ExpressibleByBooleanLiteral, Swift.ExpressibleByNilLiteral, Swift.ExpressibleByArrayLiteral, Swift.ExpressibleByDictionaryLiteral {
+  public init(stringLiteral value: Swift.String)
+  public init(integerLiteral value: Swift.Int)
+  public init(floatLiteral value: Swift.Double)
+  public init(booleanLiteral value: Swift.Bool)
+  public init(nilLiteral: ())
+  public init(arrayLiteral elements: DoorstepDropoffSDK.JSONValue...)
+  public init(dictionaryLiteral elements: (Swift.String, DoorstepDropoffSDK.JSONValue)...)
+  public typealias ArrayLiteralElement = DoorstepDropoffSDK.JSONValue
+  public typealias BooleanLiteralType = Swift.Bool
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  public typealias FloatLiteralType = Swift.Double
+  public typealias IntegerLiteralType = Swift.Int
+  public typealias Key = Swift.String
+  public typealias StringLiteralType = Swift.String
+  public typealias UnicodeScalarLiteralType = Swift.String
+  public typealias Value = DoorstepDropoffSDK.JSONValue
 }
 @_Concurrency.MainActor @preconcurrency public struct DoorstepAIRoot : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public init()
