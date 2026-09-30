@@ -724,6 +724,13 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Network",
+        "printedName": "Network",
+        "declKind": "Import",
+        "moduleName": "DoorstepDropoffSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "DoorstepEmbedError",
         "printedName": "DoorstepEmbedError",
@@ -1036,8 +1043,8 @@
             "children": [
               {
                 "kind": "Var",
-                "name": "invalidConfiguration",
-                "printedName": "invalidConfiguration",
+                "name": "invalidApiKey",
+                "printedName": "invalidApiKey",
                 "children": [
                   {
                     "kind": "TypeFunc",
@@ -1067,14 +1074,14 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:18DoorstepDropoffSDK0A10EmbedErrorV4CodeO20invalidConfigurationyA2EmF",
-                "mangledName": "$s18DoorstepDropoffSDK0A10EmbedErrorV4CodeO20invalidConfigurationyA2EmF",
+                "usr": "s:18DoorstepDropoffSDK0A10EmbedErrorV4CodeO13invalidApiKeyyA2EmF",
+                "mangledName": "$s18DoorstepDropoffSDK0A10EmbedErrorV4CodeO13invalidApiKeyyA2EmF",
                 "moduleName": "DoorstepDropoffSDK"
               },
               {
                 "kind": "Var",
-                "name": "linkGenerationFailed",
-                "printedName": "linkGenerationFailed",
+                "name": "destinationNotMapped",
+                "printedName": "destinationNotMapped",
                 "children": [
                   {
                     "kind": "TypeFunc",
@@ -1104,14 +1111,14 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:18DoorstepDropoffSDK0A10EmbedErrorV4CodeO20linkGenerationFailedyA2EmF",
-                "mangledName": "$s18DoorstepDropoffSDK0A10EmbedErrorV4CodeO20linkGenerationFailedyA2EmF",
+                "usr": "s:18DoorstepDropoffSDK0A10EmbedErrorV4CodeO20destinationNotMappedyA2EmF",
+                "mangledName": "$s18DoorstepDropoffSDK0A10EmbedErrorV4CodeO20destinationNotMappedyA2EmF",
                 "moduleName": "DoorstepDropoffSDK"
               },
               {
                 "kind": "Var",
-                "name": "networkUnavailable",
-                "printedName": "networkUnavailable",
+                "name": "networkError",
+                "printedName": "networkError",
                 "children": [
                   {
                     "kind": "TypeFunc",
@@ -1141,14 +1148,14 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:18DoorstepDropoffSDK0A10EmbedErrorV4CodeO18networkUnavailableyA2EmF",
-                "mangledName": "$s18DoorstepDropoffSDK0A10EmbedErrorV4CodeO18networkUnavailableyA2EmF",
+                "usr": "s:18DoorstepDropoffSDK0A10EmbedErrorV4CodeO07networkE0yA2EmF",
+                "mangledName": "$s18DoorstepDropoffSDK0A10EmbedErrorV4CodeO07networkE0yA2EmF",
                 "moduleName": "DoorstepDropoffSDK"
               },
               {
                 "kind": "Var",
-                "name": "httpError",
-                "printedName": "httpError",
+                "name": "internalServerError",
+                "printedName": "internalServerError",
                 "children": [
                   {
                     "kind": "TypeFunc",
@@ -1178,193 +1185,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:18DoorstepDropoffSDK0A10EmbedErrorV4CodeO04httpE0yA2EmF",
-                "mangledName": "$s18DoorstepDropoffSDK0A10EmbedErrorV4CodeO04httpE0yA2EmF",
-                "moduleName": "DoorstepDropoffSDK"
-              },
-              {
-                "kind": "Var",
-                "name": "navigationFailed",
-                "printedName": "navigationFailed",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(DoorstepDropoffSDK.DoorstepEmbedError.Code.Type) -> DoorstepDropoffSDK.DoorstepEmbedError.Code",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Code",
-                        "printedName": "DoorstepDropoffSDK.DoorstepEmbedError.Code",
-                        "usr": "s:18DoorstepDropoffSDK0A10EmbedErrorV4CodeO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "DoorstepDropoffSDK.DoorstepEmbedError.Code.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Code",
-                            "printedName": "DoorstepDropoffSDK.DoorstepEmbedError.Code",
-                            "usr": "s:18DoorstepDropoffSDK0A10EmbedErrorV4CodeO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:18DoorstepDropoffSDK0A10EmbedErrorV4CodeO16navigationFailedyA2EmF",
-                "mangledName": "$s18DoorstepDropoffSDK0A10EmbedErrorV4CodeO16navigationFailedyA2EmF",
-                "moduleName": "DoorstepDropoffSDK"
-              },
-              {
-                "kind": "Var",
-                "name": "initializationFailed",
-                "printedName": "initializationFailed",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(DoorstepDropoffSDK.DoorstepEmbedError.Code.Type) -> DoorstepDropoffSDK.DoorstepEmbedError.Code",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Code",
-                        "printedName": "DoorstepDropoffSDK.DoorstepEmbedError.Code",
-                        "usr": "s:18DoorstepDropoffSDK0A10EmbedErrorV4CodeO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "DoorstepDropoffSDK.DoorstepEmbedError.Code.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Code",
-                            "printedName": "DoorstepDropoffSDK.DoorstepEmbedError.Code",
-                            "usr": "s:18DoorstepDropoffSDK0A10EmbedErrorV4CodeO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:18DoorstepDropoffSDK0A10EmbedErrorV4CodeO20initializationFailedyA2EmF",
-                "mangledName": "$s18DoorstepDropoffSDK0A10EmbedErrorV4CodeO20initializationFailedyA2EmF",
-                "moduleName": "DoorstepDropoffSDK"
-              },
-              {
-                "kind": "Var",
-                "name": "webViewProcessTerminated",
-                "printedName": "webViewProcessTerminated",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(DoorstepDropoffSDK.DoorstepEmbedError.Code.Type) -> DoorstepDropoffSDK.DoorstepEmbedError.Code",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Code",
-                        "printedName": "DoorstepDropoffSDK.DoorstepEmbedError.Code",
-                        "usr": "s:18DoorstepDropoffSDK0A10EmbedErrorV4CodeO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "DoorstepDropoffSDK.DoorstepEmbedError.Code.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Code",
-                            "printedName": "DoorstepDropoffSDK.DoorstepEmbedError.Code",
-                            "usr": "s:18DoorstepDropoffSDK0A10EmbedErrorV4CodeO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:18DoorstepDropoffSDK0A10EmbedErrorV4CodeO24webViewProcessTerminatedyA2EmF",
-                "mangledName": "$s18DoorstepDropoffSDK0A10EmbedErrorV4CodeO24webViewProcessTerminatedyA2EmF",
-                "moduleName": "DoorstepDropoffSDK"
-              },
-              {
-                "kind": "Var",
-                "name": "initializationTimeout",
-                "printedName": "initializationTimeout",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(DoorstepDropoffSDK.DoorstepEmbedError.Code.Type) -> DoorstepDropoffSDK.DoorstepEmbedError.Code",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Code",
-                        "printedName": "DoorstepDropoffSDK.DoorstepEmbedError.Code",
-                        "usr": "s:18DoorstepDropoffSDK0A10EmbedErrorV4CodeO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "DoorstepDropoffSDK.DoorstepEmbedError.Code.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Code",
-                            "printedName": "DoorstepDropoffSDK.DoorstepEmbedError.Code",
-                            "usr": "s:18DoorstepDropoffSDK0A10EmbedErrorV4CodeO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:18DoorstepDropoffSDK0A10EmbedErrorV4CodeO21initializationTimeoutyA2EmF",
-                "mangledName": "$s18DoorstepDropoffSDK0A10EmbedErrorV4CodeO21initializationTimeoutyA2EmF",
-                "moduleName": "DoorstepDropoffSDK"
-              },
-              {
-                "kind": "Var",
-                "name": "unknown",
-                "printedName": "unknown",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(DoorstepDropoffSDK.DoorstepEmbedError.Code.Type) -> DoorstepDropoffSDK.DoorstepEmbedError.Code",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Code",
-                        "printedName": "DoorstepDropoffSDK.DoorstepEmbedError.Code",
-                        "usr": "s:18DoorstepDropoffSDK0A10EmbedErrorV4CodeO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "DoorstepDropoffSDK.DoorstepEmbedError.Code.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Code",
-                            "printedName": "DoorstepDropoffSDK.DoorstepEmbedError.Code",
-                            "usr": "s:18DoorstepDropoffSDK0A10EmbedErrorV4CodeO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:18DoorstepDropoffSDK0A10EmbedErrorV4CodeO7unknownyA2EmF",
-                "mangledName": "$s18DoorstepDropoffSDK0A10EmbedErrorV4CodeO7unknownyA2EmF",
+                "usr": "s:18DoorstepDropoffSDK0A10EmbedErrorV4CodeO014internalServerE0yA2EmF",
+                "mangledName": "$s18DoorstepDropoffSDK0A10EmbedErrorV4CodeO014internalServerE0yA2EmF",
                 "moduleName": "DoorstepDropoffSDK"
               },
               {
@@ -1438,6 +1260,66 @@
                     "accessorKind": "get"
                   }
                 ]
+              },
+              {
+                "kind": "Var",
+                "name": "allCases",
+                "printedName": "allCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[DoorstepDropoffSDK.DoorstepEmbedError.Code]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Code",
+                        "printedName": "DoorstepDropoffSDK.DoorstepEmbedError.Code",
+                        "usr": "s:18DoorstepDropoffSDK0A10EmbedErrorV4CodeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:18DoorstepDropoffSDK0A10EmbedErrorV4CodeO8allCasesSayAEGvpZ",
+                "mangledName": "$s18DoorstepDropoffSDK0A10EmbedErrorV4CodeO8allCasesSayAEGvpZ",
+                "moduleName": "DoorstepDropoffSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Nonisolated"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[DoorstepDropoffSDK.DoorstepEmbedError.Code]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Code",
+                            "printedName": "DoorstepDropoffSDK.DoorstepEmbedError.Code",
+                            "usr": "s:18DoorstepDropoffSDK0A10EmbedErrorV4CodeO"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:18DoorstepDropoffSDK0A10EmbedErrorV4CodeO8allCasesSayAEGvgZ",
+                    "mangledName": "$s18DoorstepDropoffSDK0A10EmbedErrorV4CodeO8allCasesSayAEGvgZ",
+                    "moduleName": "DoorstepDropoffSDK",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
               }
             ],
             "declKind": "Enum",
@@ -1445,7 +1327,8 @@
             "mangledName": "$s18DoorstepDropoffSDK0A10EmbedErrorV4CodeO",
             "moduleName": "DoorstepDropoffSDK",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "enumRawTypeName": "String",
             "conformances": [
@@ -1455,13 +1338,6 @@
                 "printedName": "Copyable",
                 "usr": "s:s8CopyableP",
                 "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
               },
               {
                 "kind": "Conformance",
@@ -1508,10 +1384,47 @@
               },
               {
                 "kind": "Conformance",
+                "name": "CaseIterable",
+                "printedName": "CaseIterable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "AllCases",
+                    "printedName": "AllCases",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[DoorstepDropoffSDK.DoorstepEmbedError.Code]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Code",
+                            "printedName": "DoorstepDropoffSDK.DoorstepEmbedError.Code",
+                            "usr": "s:18DoorstepDropoffSDK0A10EmbedErrorV4CodeO"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:s12CaseIterableP",
+                "mangledName": "$ss12CaseIterableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "SendableMetatype",
                 "printedName": "SendableMetatype",
                 "usr": "s:s16SendableMetatypeP",
                 "mangledName": "$ss16SendableMetatypeP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
               }
             ]
           },
@@ -15718,268 +15631,317 @@
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "Array",
-      "offset": 43517,
+      "offset": 44327,
       "length": 30,
       "value": "[\"light\", \"dark\", \"satellite\"]"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 46756,
+      "offset": 47566,
       "length": 2245,
       "value": "\"(() => {\n  if (window.dsgo && typeof window.dsgo.recenter === 'function') {\n    window.dsgo.recenter()\n    return 'api'\n  }\n\n  const clickableAncestor = (node) => node?.closest(\n    'button, [role=\"button\"], [data-dsgo-control=\"recenter\"], [class*=\"cursor-pointer\"]'\n  )\n\n  let control = document.querySelector('[data-dsgo-control=\"recenter\"]')\n    || document.querySelector('[aria-label=\"recenter map\" i]')\n    || clickableAncestor(document.querySelector('svg.lucide-focus'))\n\n  if (!control) {\n    const standardGlyph = Array.from(document.querySelectorAll('svg[viewBox=\"0 0 24 24\"]'))\n      .find((svg) => {\n        const paths = Array.from(svg.querySelectorAll('path'))\n        const pathData = paths.map((path) => path.getAttribute('d') || '')\n        return paths.length === 5\n          && pathData.some((d) => d.startsWith('M12 3'))\n          && pathData.some((d) => d.startsWith('M3.00781 12'))\n          && pathData.some((d) => d.startsWith('M19.0156 12'))\n      })\n    control = clickableAncestor(standardGlyph)\n  }\n\n  \/\/ Deployed Doorstep Go versions have shipped more than one focus glyph.\n  \/\/ The control's layout contract is steadier than its SVG: it is the only\n  \/\/ clickable, fixed, circular SVG control anchored to the viewport bottom.\n  if (!control) {\n    control = Array.from(document.querySelectorAll('[class*=\"cursor-pointer\"]'))\n      .find((element) => {\n        const style = getComputedStyle(element)\n        return style.position === 'fixed'\n          && element.style.bottom !== ''\n          && style.borderRadius !== '0px'\n          && style.pointerEvents !== 'none'\n          && element.querySelector('svg')\n      })\n  }\n\n  if (!control) {\n    const dropoffGlyph = Array.from(document.querySelectorAll('svg[viewBox=\"0 0 50 50\"]'))\n      .find((svg) => svg.querySelectorAll('circle').length === 2\n        && svg.querySelectorAll('path').length >= 4)\n    control = clickableAncestor(dropoffGlyph)\n  }\n\n  if (!control || typeof control.click !== 'function') return 'missing'\n  control.click()\n  return 'control'\n})()\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 49885,
+      "offset": 50695,
       "length": 959,
       "value": "\"(function () {\n  const read = () => {\n    const s = getComputedStyle(document.documentElement)\n    return {\n      bg:     s.getPropertyValue('--th-button-bg').trim(),\n      border: s.getPropertyValue('--th-button-border').trim(),\n      icon:   s.getPropertyValue('--th-icon').trim(),\n      sv:     document.documentElement.dataset.sv || 'closed',\n    }\n  }\n  let last = ''\n  const post = () => {\n    const t = read()\n    if (!t.bg) return\n    const key = [t.bg, t.border, t.icon, t.sv].join('|')\n    if (key === last) return\n    last = key\n    window.webkit?.messageHandlers?.dsgoState?.postMessage(t)\n  }\n  new MutationObserver(post).observe(document.documentElement, {\n    attributes: true, attributeFilter: ['style', 'data-sv'],\n  })\n  let n = 0\n  const id = setInterval(() => { post(); if (++n > 40) clearInterval(id) }, 100)\n  post()\n})()\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 51509,
+      "offset": 52319,
       "length": 9,
       "value": "\"version\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 51531,
+      "offset": 52341,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 51572,
+      "offset": 52382,
       "length": 12,
       "value": "\"documentId\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 51667,
+      "offset": 52477,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 51725,
+      "offset": 52535,
       "length": 7,
       "value": "\"start\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 51877,
+      "offset": 52687,
       "length": 6,
       "value": "\"stop\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 52195,
+      "offset": 53005,
       "length": 65,
       "value": "\"Doorstep Go: dropped lifecycle message without an attempt token\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 52905,
+      "offset": 53715,
       "length": 61,
       "value": "\"Doorstep Go: dropped state message without an attempt token\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 62124,
+      "offset": 62942,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 62400,
+      "offset": 63218,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 62470,
+      "offset": 63288,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "FloatLiteral",
-      "offset": 62540,
+      "offset": 63358,
       "length": 3,
       "value": "8.5"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 62612,
+      "offset": 63430,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 62682,
+      "offset": 63500,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 64084,
+      "offset": 65165,
       "length": 30,
       "value": "\"https:\/\/api.core.doorstep.ai\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 64205,
+      "offset": 65286,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 64252,
+      "offset": 65333,
       "length": 3,
       "value": "600"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 64291,
+      "offset": 65372,
       "length": 7,
       "value": "\"light\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 64338,
+      "offset": 65419,
       "length": 28,
       "value": "\"95% of drivers parked here\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 64406,
+      "offset": 65487,
       "length": 9,
       "value": "\"#027FB8\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 64456,
+      "offset": 65537,
       "length": 9,
       "value": "\"#3291BC\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "StringLiteral",
-      "offset": 64506,
+      "offset": 65587,
       "length": 9,
       "value": "\"#FF847B\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "BooleanLiteral",
-      "offset": 64603,
+      "offset": 65684,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "BooleanLiteral",
-      "offset": 64651,
+      "offset": 65732,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "BooleanLiteral",
-      "offset": 64698,
+      "offset": 65779,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "BooleanLiteral",
-      "offset": 64749,
+      "offset": 65830,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "BooleanLiteral",
-      "offset": 64793,
+      "offset": 65874,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 64852,
+      "offset": 65933,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "FloatLiteral",
-      "offset": 70543,
+      "offset": 71624,
       "length": 5,
       "value": "41.48"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "FloatLiteral",
-      "offset": 70599,
+      "offset": 71680,
       "length": 5,
       "value": "24.89"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "FloatLiteral",
-      "offset": 70684,
+      "offset": 71765,
       "length": 5,
       "value": "2.074"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 70692,
+      "offset": 71773,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 70755,
+      "offset": 71836,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "FloatLiteral",
-      "offset": 70805,
+      "offset": 71886,
       "length": 5,
       "value": "24.89"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 70863,
+      "offset": 71944,
       "length": 2,
       "value": "21"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepEmbedError.swift",
+      "kind": "StringLiteral",
+      "offset": 599,
+      "length": 17,
+      "value": "\"INVALID_API_KEY\""
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepEmbedError.swift",
+      "kind": "StringLiteral",
+      "offset": 653,
+      "length": 24,
+      "value": "\"DESTINATION_NOT_MAPPED\""
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepEmbedError.swift",
+      "kind": "StringLiteral",
+      "offset": 706,
+      "length": 15,
+      "value": "\"NETWORK_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepEmbedError.swift",
+      "kind": "StringLiteral",
+      "offset": 757,
+      "length": 23,
+      "value": "\"INTERNAL_SERVER_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepEmbedError.swift",
+      "kind": "StringLiteral",
+      "offset": 2279,
+      "length": 32,
+      "value": "\"ai.doorstep.embed.reachability\""
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepEmbedError.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2388,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepEmbedError.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2419,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/GoLinkService.swift",
@@ -15991,14 +15953,21 @@
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/GoLinkService.swift",
       "kind": "BooleanLiteral",
-      "offset": 4233,
+      "offset": 3654,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/GoLinkService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4428,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/GoLinkService.swift",
       "kind": "BooleanLiteral",
-      "offset": 6433,
+      "offset": 6628,
       "length": 4,
       "value": "true"
     },
@@ -16063,7 +16032,7 @@
       "kind": "StringLiteral",
       "offset": 416,
       "length": 9,
-      "value": "\"97b77e6\""
+      "value": "\"91da47b\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/BackgroundActivityHolder.swift",
@@ -18981,8 +18950,8 @@
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/Environment.swift",
       "kind": "StringLiteral",
       "offset": 543,
-      "length": 7,
-      "value": "\"2.2.7\""
+      "length": 8,
+      "value": "\"2.2.11\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DataManager.swift",
