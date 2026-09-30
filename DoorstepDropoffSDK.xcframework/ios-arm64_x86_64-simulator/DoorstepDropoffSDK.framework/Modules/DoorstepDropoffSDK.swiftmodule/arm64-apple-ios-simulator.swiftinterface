@@ -48,18 +48,17 @@ public struct DoorstepEmbedError : Swift.Error {
       get
     }
   }
-  public enum Code : Swift.String, Swift.Sendable {
-    case invalidConfiguration
-    case linkGenerationFailed
-    case networkUnavailable
-    case httpError
-    case navigationFailed
-    case initializationFailed
-    case webViewProcessTerminated
-    case initializationTimeout
-    case unknown
+  public enum Code : Swift.String, Swift.Sendable, Swift.CaseIterable {
+    case invalidApiKey
+    case destinationNotMapped
+    case networkError
+    case internalServerError
     public init?(rawValue: Swift.String)
+    public typealias AllCases = [DoorstepDropoffSDK.DoorstepEmbedError.Code]
     public typealias RawValue = Swift.String
+    nonisolated public static var allCases: [DoorstepDropoffSDK.DoorstepEmbedError.Code] {
+      get
+    }
     public var rawValue: Swift.String {
       get
     }
