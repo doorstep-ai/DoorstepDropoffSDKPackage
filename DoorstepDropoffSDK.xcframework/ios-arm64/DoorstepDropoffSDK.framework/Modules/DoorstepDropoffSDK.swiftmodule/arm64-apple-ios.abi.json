@@ -15848,49 +15848,49 @@
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "FloatLiteral",
-      "offset": 71599,
+      "offset": 71809,
       "length": 5,
       "value": "41.48"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "FloatLiteral",
-      "offset": 71655,
+      "offset": 71865,
       "length": 5,
       "value": "24.89"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "FloatLiteral",
-      "offset": 71740,
+      "offset": 71950,
       "length": 5,
       "value": "2.074"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 71748,
+      "offset": 71958,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 71811,
+      "offset": 72021,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "FloatLiteral",
-      "offset": 71861,
+      "offset": 72071,
       "length": 5,
       "value": "24.89"
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DoorstepGoEmbed.swift",
       "kind": "IntegerLiteral",
-      "offset": 71919,
+      "offset": 72129,
       "length": 2,
       "value": "21"
     },
@@ -16032,7 +16032,7 @@
       "kind": "StringLiteral",
       "offset": 416,
       "length": 15,
-      "value": "\"1770603-dirty\""
+      "value": "\"2912b98-dirty\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/BackgroundActivityHolder.swift",
@@ -18951,7 +18951,7 @@
       "kind": "StringLiteral",
       "offset": 543,
       "length": 8,
-      "value": "\"2.2.12\""
+      "value": "\"2.2.13\""
     },
     {
       "filePath": "\/Users\/sheelpatel\/Documents\/doorstepai\/doorstepai-track\/SDKs\/iOS\/DoorstepDropoffSDK\/DoorstepDropoffSDK\/src\/DataManager.swift",
